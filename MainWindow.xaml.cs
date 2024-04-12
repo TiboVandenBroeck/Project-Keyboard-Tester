@@ -19,6 +19,8 @@ namespace Project_Keyboard_Tester
         public MainWindow()
         {
             InitializeComponent();
+            Accessibility;
         }
+        //test test
     }
 }
