@@ -19,8 +19,28 @@ namespace Project_Keyboard_Tester
         public MainWindow()
         {
             InitializeComponent();
-            Accessibility;
+            
+
         }
-        //test test
+        /*private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.A:
+                    RA.Fill = Brushes.Green;
+                    break;
+                case Key.Z:
+                    RZ.Fill = Brushes.Green;
+                    break;
+                case Key.E:
+                    RE.Fill = Brushes.Green;
+                    break;
+                case Key.R:
+                    RR.Fill = Brushes.Green;
+                    break;
+                default:
+                    break;
+            }
+        ¨*/
     }
 }
