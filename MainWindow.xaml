@@ -5,787 +5,790 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Keyboard_Tester"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="Keyboard Test programma" Height="280" Width="800"
         KeyDown="Window_KeyDown">
 
     <Grid>
-
-        <!--ESC-->
-        <Rectangle x:Name="RESC" Fill="LightGray" Margin="19,12,731,372" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="ESC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,29,0,0"/>
-        <!--F1-->
-        <Rectangle x:Name="RF1" Fill="LightGray" Margin="98,25,677,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,29,0,0"/>
-        <!--F2-->
-        <Rectangle x:Name="RF2" Fill="LightGray" Margin="127,25,648,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="134,29,0,0"/>
-        <!--F3-->
-        <Rectangle x:Name="RF3" Fill="LightGray" Margin="157,25,618,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="163,29,0,0"/>
-        <!--F4-->
-        <Rectangle x:Name="RF4" Fill="LightGray" Margin="186,25,589,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,29,0,0"/>
-        <!--F5-->
-        <Rectangle x:Name="RF5" Fill="LightGray" Margin="237,25,538,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,29,0,0"/>
-        <!--F6-->
-        <Rectangle x:Name="RF6" Fill="LightGray" Margin="269,25,506,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,29,0,0"/>
-        <!--F7-->
-        <Rectangle x:Name="RF7" Fill="LightGray" Margin="300,25,475,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306,29,0,0"/>
-        <!--F8-->
-        <Rectangle x:Name="RF8" Fill="LightGray" Margin="331,25,444,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="337,29,0,0"/>
-        <!--F9-->
-        <Rectangle x:Name="RF9" Fill="LightGray" Margin="384,25,391,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="390,29,0,0"/>
-        <!--F10-->
-        <Rectangle x:Name="RF10" Fill="LightGray" Margin="416,25,359,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="419,29,0,0"/>
-        <!--F11-->
-        <Rectangle x:Name="RF11" Fill="LightGray" Margin="447,25,328,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,29,0,0"/>
-        <!--F12-->
-        <Rectangle x:Name="RF12" Fill="LightGray" Margin="478,25,297,384" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="481,29,0,0"/>
-        <!--Print Screen-->
-        <Rectangle x:Name="RPrntscrn" Fill="LightGray" Margin="511,25,264,384" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Prnt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="513,29,0,0"/>
-        <!--Scroll Lock-->
-        <Rectangle x:Name="RScrlllck" Fill="LightGray" Margin="538,25,237,384" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Scrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="541,29,0,0"/>
-        <!--Pause-->
-        <Rectangle x:Name="RPause" Fill="LightGray" Margin="565,25,210,384" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="568,32,0,0" FontSize="8"/>
-        <!--Macht-->
-        <Rectangle x:Name="RMacht" Fill="LightGray" Margin="31,65,744,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="²" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,79,0,0"/>
-        <TextBlock Text="³" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,70,0,0"/>
-        <!--&-->
-        <Rectangle x:Name="Rone" Fill="LightGray" Margin="63,65,712,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,70,0,0"/>
-        <!--é-->
-        <Rectangle x:Name="Rtwo" Fill="LightGray" Margin="96,65,679,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,70,0,0"/>
-        <!--"-->
-        <Rectangle x:Name="Rthree" Fill="LightGray" Margin="127,65,648,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,70,0,0"/>
-        <!--'-->
-        <Rectangle x:Name="Rfour" Fill="LightGray" Margin="158,65,617,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="167,70,0,0"/>
-        <!--(-->
-        <Rectangle x:Name="Rfive" Fill="LightGray" Margin="190,65,584,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,70,0,0"/>
-        <!--§-->
-        <Rectangle x:Name="Rsix" Fill="LightGray" Margin="224,65,551,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,70,0,0"/>
-        <!--è-->
-        <Rectangle x:Name="Rseven" Fill="LightGray" Margin="256,65,519,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,70,0,0"/>
-        <!--!-->
-        <Rectangle x:Name="Reight" Fill="LightGray" Margin="286,65,490,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,70,0,0"/>
-        <!--ç-->
-        <Rectangle x:Name="Rnine" Fill="LightGray" Margin="314,65,461,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,70,0,0"/>
-        <!--à-->
-        <Rectangle x:Name="Rzero" Fill="LightGray" Margin="344,65,431,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,70,0,0"/>
-        <!--)-->
-        <Rectangle x:Name="RCelcius" Fill="LightGray" Margin="375,65,400,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="°" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="383,70,0,0"/>
-        <!--_-->
-        <Rectangle x:Name="R_" Fill="LightGray" Margin="405,65,370,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="415,70,0,0"/>
-        <!--backspace-->
-        <Rectangle x:Name="RBack" Fill="LightGray" Margin="435,65,297,344" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="BackSpace" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="441,70,0,0"/>
-        <!--Insert-->
-        <Rectangle x:Name="RInsert" Fill="LightGray" Margin="511,65,264,344" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Ins" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,70,0,0"/>
-        <!--Home-->
-        <Rectangle x:Name="RHome" Fill="LightGray" Margin="539,65,236,344" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="541,72,0,0" FontSize="8"/>
-        <!--Page Up-->
-        <Rectangle x:Name="RUp" Fill="LightGray" Margin="566,65,209,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Up" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="571,70,0,0"/>
-        <!--Num Lock-->
-        <Rectangle x:Name="RNumlock" Fill="LightGray" Margin="619,65,137,344" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Num" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,70,0,0" FontSize="10"/>
-        <!--/-->
-        <Rectangle x:Name="RDash" Fill="LightGray" Margin="658,65,117,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="/" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,70,0,0"/>
-        <!--*-->
-        <Rectangle x:Name="RMultipl" Fill="LightGray" Margin="688,65,87,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="698,70,0,0"/>
-        <!--_-->
-        <Rectangle x:Name="RStreep" Fill="LightGray" Margin="716,65,59,344" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="728,70,0,0"/>
-        <!--TAB-->
-        <Rectangle x:Name="RTab" Fill="LightGray" Margin="32,95,744,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="TAB" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,100,0,0"/>
-        <!--A-->
-        <Rectangle x:Name="RA" Fill="LightGray" Margin="63,95,712,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="A" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="69,100,0,0"/>
-        <!--Z-->
-        <Rectangle x:Name="RZ" Fill="LightGray" Margin="96,95,679,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Z" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,100,0,0"/>
-        <!--E-->
-        <Rectangle x:Name="RE" Fill="LightGray" Margin="126,95,649,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="E" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,100,0,0"/>
-        <TextBlock Text="€" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="143,105,0,0"/>
-        <!--R-->
-        <Rectangle x:Name="RR" Fill="LightGray" Margin="156,95,619,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="R" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="165,100,0,0"/>
-        <!--T-->
-        <Rectangle x:Name="RT" Fill="LightGray" Margin="186,95,589,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="T" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="195,100,0,0"/>
-        <!--Y-->
-        <Rectangle x:Name="RY" Fill="LightGray" Margin="214,95,561,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Y" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="223,100,0,0"/>
-        <!--U-->
-        <Rectangle x:Name="RU" Fill="LightGray" Margin="244,95,531,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="U" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="252,100,0,0"/>
-        <!--I-->
-        <Rectangle x:Name="RI" Fill="LightGray" Margin="274,95,501,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="I" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="285,100,0,0"/>
-        <!--O-->
-        <Rectangle x:Name="RO" Fill="LightGray" Margin="304,95,471,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="O" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="312,100,0,0"/>
-        <!--P-->
-        <Rectangle x:Name="RP" Fill="LightGray" Margin="334,95,441,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="P" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="342,100,0,0"/>
-        <!--^-->
-        <Rectangle x:Name="RPiramid" Fill="LightGray" Margin="364,95,411,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="^" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="365,105,0,0"/>
-        <TextBlock Text="¨" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,94,0,0"/>
-        <TextBlock Text="[" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,103,0,0"/>
-        <!--$-->
-        <Rectangle x:Name="RDollar" Fill="LightGray" Margin="392,95,382,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="395,94,0,0"/>
-        <TextBlock Text="$" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="394,103,0,0"/>
-        <TextBlock Text="]" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,104,0,0"/>
-        <!--Enter-->
-        <Rectangle x:Name="REnter" Fill="LightGray" Margin="447,95,297,282">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="461,100,0,0"/>
-        <!--Delete-->
-        <Rectangle x:Name="RDel" Fill="LightGray" Margin="511,95,264,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Del" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="515,99,0,0"/>
-        <!--End-->
-        <Rectangle x:Name="REnd" Fill="LightGray" Margin="539,95,236,314" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="End" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="542,99,0,0"/>
-        <!--Page Down-->
-        <Rectangle x:Name="RPagedown" Fill="LightGray" Margin="566,95,209,314" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Down" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="568,102,0,0" FontSize="8"/>
-        <!--7-->
-        <Rectangle x:Name="R7" Fill="LightGray" Margin="628,94,147,315" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,99,0,0"/>
-        <!--8-->
-        <Rectangle x:Name="R8" Fill="LightGray" Margin="658,94,117,315" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="667,99,0,0"/>
-        <!--9-->
-        <Rectangle x:Name="R9" Fill="LightGray" Margin="688,94,87,315" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="697,99,0,0"/>
-        <!--+-->
-        <Rectangle x:Name="RPlus" Fill="LightGray" Margin="717,95,58,287" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="725,100,0,0"/>
-        <!--Caps Lock-->
-        <Rectangle x:Name="RCapslock" Fill="LightGray" Margin="32,127,731,282" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Caps" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,132,0,0"/>
-        <!--Q-->
-        <Rectangle x:Name="RQ" Fill="LightGray" Margin="74,127,701,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Q" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,132,0,0"/>
-        <!--S-->
-        <Rectangle x:Name="RS" Fill="LightGray" Margin="105,127,670,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="S" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,132,0,0"/>
-        <!--D-->
-        <Rectangle x:Name="RD" Fill="LightGray" Margin="135,127,640,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="D" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="143,132,0,0"/>
-        <!--F-->
-        <Rectangle x:Name="RF" Fill="LightGray" Margin="165,127,610,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="F" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,132,0,0"/>
-        <!--G-->
-        <Rectangle x:Name="RG" Fill="LightGray" Margin="195,127,580,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="G" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,132,0,0"/>
-        <!--H-->
-        <Rectangle x:Name="RH" Fill="LightGray" Margin="225,127,550,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="H" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,132,0,0"/>
-        <!--J-->
-        <Rectangle x:Name="RJ" Fill="LightGray" Margin="256,127,519,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="J" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="266,132,0,0"/>
-        <!--K-->
-        <Rectangle x:Name="RK" Fill="LightGray" Margin="287,127,488,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="K" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="296,132,0,0"/>
-        <!--L-->
-        <Rectangle x:Name="RL" Fill="LightGray" Margin="317,127,458,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="L" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="327,132,0,0"/>
-        <!--M-->
-        <Rectangle x:Name="RM" Fill="LightGray" Margin="346,127,428,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="M" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="354,132,0,0"/>
-        <!--ù-->
-        <Rectangle x:Name="Rù" Fill="LightGray" Margin="376,127,398,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="ù" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,136,0,0"/>
-        <TextBlock Text="%" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,125,0,0"/>
-        <TextBlock Text="´" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="394,140,0,0"/>
-        <!--µ-->
-        <Rectangle x:Name="Rµ" Fill="LightGray" Margin="408,127,367,282" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="µ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,135,0,0"/>
-        <TextBlock Text="£" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,125,0,0"/>
-        <TextBlock Text="`" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="427,141,0,0"/>
-        <!--4-->
-        <Rectangle x:Name="R4" Fill="LightGray" Margin="628,122,146,287" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,127,0,0"/>
-        <!--5-->
-        <Rectangle x:Name="R5" Fill="LightGray" Margin="658,122,117,287" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,127,0,0"/>
-        <!--6-->
-        <Rectangle x:Name="R6" Fill="LightGray" Margin="688,122,86,287" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="698,127,0,0"/>
-        <!--LeftShift-->
-        <Rectangle x:Name="RLeftshift" Fill="LightGray" Margin="32,157,736,252" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,162,0,0"/>
-        <!--<-->
-        <Rectangle x:Name="RBek" Fill="LightGray" Margin="69,157,706,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text=">" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="77,162,0,0"/>
-        <!--W-->
-        <Rectangle x:Name="RW" Fill="LightGray" Margin="99,157,676,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="W" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,162,0,0"/>
-        <!--X-->
-        <Rectangle x:Name="RX" Fill="LightGray" Margin="126,157,649,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="134,162,0,0"/>
-        <!--C-->
-        <Rectangle x:Name="RC" Fill="LightGray" Margin="156,157,619,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="C" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="166,162,0,0"/>
-        <!--V-->
-        <Rectangle x:Name="RV" Fill="LightGray" Margin="184,157,591,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="V" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="193,162,0,0"/>
-        <!--B-->
-        <Rectangle x:Name="RB" Fill="LightGray" Margin="214,157,561,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="B" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="223,162,0,0"/>
-        <!--N-->
-        <Rectangle x:Name="RN" Fill="LightGray" Margin="244,157,531,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="N" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="251,162,0,0"/>
-        <!--,-->
-        <Rectangle x:Name="RQuestion" Fill="LightGray" Margin="274,157,500,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="," HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,162,0,0"/>
-        <TextBlock Text="?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="277,157,0,0"/>
-        <!--;-->
-        <Rectangle x:Name="RPunt" Fill="LightGray" Margin="305,157,470,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text=";" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="315,162,0,0"/>
-        <TextBlock Text="." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="307,151,0,0"/>
-        <!--:-->
-        <Rectangle x:Name="RDubbelpunt" Fill="LightGray" Margin="334,157,441,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text=":" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="345,162,0,0"/>
-        <TextBlock Text="/" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="335,155,0,0"/>
-        <!--=-->
-        <Rectangle x:Name="Recual" Fill="LightGray" Margin="364,157,411,252" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,164,0,0"/>
-        <TextBlock Text="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,155,0,0"/>
-        <TextBlock Text="~" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,165,0,0"/>
-        <!--RightShift-->
-        <Rectangle x:Name="RRightshift" Fill="LightGray" Margin="400,157,297,252" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,162,0,0"/>
-        <!--ArrowUp-->
-        <Rectangle x:Name="RArrowup" Fill="LightGray" Margin="540,161,236,248" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <Image Source="arrow.png" Margin="539,156,235,243" RenderTransformOrigin="0.5,0.5" >
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <!--1-->
-        <Rectangle x:Name="R1" Fill="LightGray" Margin="629,152,146,257" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,157,0,0"/>
-        <!--2-->
-        <Rectangle x:Name="R2" Fill="LightGray" Margin="658,152,117,257" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="667,157,0,0"/>
-        <!--3-->
-        <Rectangle x:Name="R3" Fill="LightGray" Margin="689,152,86,257" Width="25" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="699,157,0,0"/>
-        <!--NumEnter-->
-        <Rectangle x:Name="RNumEnter" Fill="LightGray" Margin="717,152,58,221" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="718,157,0,0" FontSize="10"/>
-        <!--LeftCtrl-->
-        <Rectangle x:Name="RLeftctrl" Fill="LightGray" Margin="32,187,731,222" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Ctrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,192,0,0"/>
-        <!--Windows-->
-        <Rectangle x:Name="RWindows" Fill="LightGray" Margin="74,187,701,222" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <Image Source="windows.png" Margin="76,183,702,219"/>
-        <!--Alt-->
-        <Rectangle x:Name="RAlt" Fill="LightGray" Margin="104,187,671,222" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Alt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,192,0,0"/>
-        <!--Space-->
-        <Rectangle x:Name="RSpace" Fill="LightGray" Margin="134,187,490,222" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Space" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,192,0,0"/>
-        <!--Alt gr-->
-        <Rectangle x:Name="RAltgr" Fill="LightGray" Margin="318,187,444,222" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Alt gr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="322,192,0,0"/>
-        <!--Fn-->
-        <Rectangle x:Name="RFn" Fill="LightGray" Margin="362,187,412,222" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Fn" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="369,191,0,0"/>
-        <!--Menu-->
-        <Rectangle x:Name="RMenu" Fill="LightGray" Margin="400,187,360,222" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <Image Source="menu.png" Margin="398,184,358,220" />
-        <!--RightCtrl-->
-        <Rectangle x:Name="Rrightctrl" Fill="LightGray" Margin="457,187,300,222" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="Ctrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="470,191,0,0"/>
-        <!--ArrowLeft-->
-        <Rectangle x:Name="RArrowleft" Fill="LightGray" Margin="513,188,262,221" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <Image Source="arrow.png" Margin="513,183,262,216" />
-        <!--ArrowDown-->
-        <Rectangle x:Name="RArrowdown" Fill="LightGray" Margin="540,188,235,221" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <Image Source="arrow.png" Margin="540,183,235,216" RenderTransformOrigin="0.5,0.5" >
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <!--ArrowRight-->
-        <Rectangle x:Name="RArrowright" Fill="LightGray" Margin="567,188,208,221" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <Image Source="arrow.png" Margin="568,184,208,216" RenderTransformOrigin="0.5,0.5" >
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <!--0-->
-        <Rectangle x:Name="R0" Fill="LightGray" Margin="628,188,117,221" Height="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="652,193,0,0"/>
-        <!--Numpunt-->
-        <Rectangle x:Name="RNumpunt" Fill="LightGray" Margin="689,188,86,221" Height="25" Width="25">
-            <Rectangle.Triggers>
-                <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
-            </Rectangle.Triggers>
-        </Rectangle>
-        <TextBlock Text="." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="700,192,0,0"/>
+        <Canvas Height="250" Width="800">
+            <!--ESC-->
+            <Rectangle x:Name="RESC" Fill="LightGray" Width="25" Height="25" Canvas.Left="31" Canvas.Top="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="ESC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,29,0,0"/>
+            <!--F1-->
+            <Rectangle x:Name="RF1" Fill="LightGray" Margin="98,25,677,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,29,0,0"/>
+            <!--F2-->
+            <Rectangle x:Name="RF2" Fill="LightGray" Margin="127,25,648,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="134,29,0,0"/>
+            <!--F3-->
+            <Rectangle x:Name="RF3" Fill="LightGray" Margin="157,25,618,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="163,29,0,0"/>
+            <!--F4-->
+            <Rectangle x:Name="RF4" Fill="LightGray" Margin="186,25,589,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,29,0,0"/>
+            <!--F5-->
+            <Rectangle x:Name="RF5" Fill="LightGray" Margin="237,25,538,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,29,0,0"/>
+            <!--F6-->
+            <Rectangle x:Name="RF6" Fill="LightGray" Margin="269,25,506,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,29,0,0"/>
+            <!--F7-->
+            <Rectangle x:Name="RF7" Fill="LightGray" Margin="300,25,475,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306,29,0,0"/>
+            <!--F8-->
+            <Rectangle x:Name="RF8" Fill="LightGray" Margin="331,25,444,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="337,29,0,0"/>
+            <!--F9-->
+            <Rectangle x:Name="RF9" Fill="LightGray" Margin="384,25,391,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="390,29,0,0"/>
+            <!--F10-->
+            <Rectangle x:Name="RF10" Fill="LightGray" Margin="416,25,359,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="419,29,0,0"/>
+            <!--F11-->
+            <Rectangle x:Name="RF11" Fill="LightGray" Margin="447,25,328,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,29,0,0"/>
+            <!--F12-->
+            <Rectangle x:Name="RF12" Fill="LightGray" Margin="478,25,297,384" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="481,29,0,0"/>
+            <!--Print Screen-->
+            <Rectangle x:Name="RPrntscrn" Fill="LightGray" Margin="511,25,264,384" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Prnt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="513,29,0,0"/>
+            <!--Scroll Lock-->
+            <Rectangle x:Name="RScrlllck" Fill="LightGray" Margin="538,25,237,384" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Scrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="541,29,0,0"/>
+            <!--Pause-->
+            <Rectangle x:Name="RPause" Fill="LightGray" Margin="565,25,210,384" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="568,32,0,0" FontSize="8"/>
+            <!--Macht-->
+            <Rectangle x:Name="RMacht" Fill="LightGray" Margin="31,65,744,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="²" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,79,0,0"/>
+            <TextBlock Text="³" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,70,0,0"/>
+            <!--&-->
+            <Rectangle x:Name="Rone" Fill="LightGray" Margin="63,65,712,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,70,0,0"/>
+            <!--é-->
+            <Rectangle x:Name="Rtwo" Fill="LightGray" Margin="96,65,679,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,70,0,0"/>
+            <!--"-->
+            <Rectangle x:Name="Rthree" Fill="LightGray" Margin="127,65,648,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,70,0,0"/>
+            <!--'-->
+            <Rectangle x:Name="Rfour" Fill="LightGray" Margin="158,65,617,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="167,70,0,0"/>
+            <!--(-->
+            <Rectangle x:Name="Rfive" Fill="LightGray" Margin="190,65,584,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,70,0,0"/>
+            <!--§-->
+            <Rectangle x:Name="Rsix" Fill="LightGray" Margin="224,65,551,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,70,0,0"/>
+            <!--è-->
+            <Rectangle x:Name="Rseven" Fill="LightGray" Margin="256,65,519,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,70,0,0"/>
+            <!--!-->
+            <Rectangle x:Name="Reight" Fill="LightGray" Margin="286,65,490,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,70,0,0"/>
+            <!--ç-->
+            <Rectangle x:Name="Rnine" Fill="LightGray" Margin="314,65,461,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,70,0,0"/>
+            <!--à-->
+            <Rectangle x:Name="Rzero" Fill="LightGray" Margin="344,65,431,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,70,0,0"/>
+            <!--)-->
+            <Rectangle x:Name="RCelcius" Fill="LightGray" Margin="375,65,400,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="°" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="383,70,0,0"/>
+            <!--_-->
+            <Rectangle x:Name="R_" Fill="LightGray" Margin="405,65,370,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="415,70,0,0"/>
+            <!--backspace-->
+            <Rectangle x:Name="RBack" Fill="LightGray" Height="25" Canvas.Left="435" Canvas.Top="65" Width="68">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="BackSpace" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="441,70,0,0"/>
+            <!--Insert-->
+            <Rectangle x:Name="RInsert" Fill="LightGray" Margin="511,65,264,344" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Ins" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,70,0,0"/>
+            <!--Home-->
+            <Rectangle x:Name="RHome" Fill="LightGray" Margin="539,65,236,344" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="541,72,0,0" FontSize="8"/>
+            <!--Page Up-->
+            <Rectangle x:Name="RUp" Fill="LightGray" Margin="566,65,209,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Up" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="571,70,0,0"/>
+            <!--Num Lock-->
+            <Rectangle x:Name="RNumlock" Fill="LightGray" Height="25" Width="25" Canvas.Left="628" Canvas.Top="65">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Num" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,70,0,0" FontSize="10"/>
+            <!--/-->
+            <Rectangle x:Name="RDash" Fill="LightGray" Margin="658,65,117,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="/" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,70,0,0"/>
+            <!--*-->
+            <Rectangle x:Name="RMultipl" Fill="LightGray" Margin="688,65,87,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="698,70,0,0"/>
+            <!--_-->
+            <Rectangle x:Name="RStreep" Fill="LightGray" Margin="716,65,59,344" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="728,70,0,0"/>
+            <!--TAB-->
+            <Rectangle x:Name="RTab" Fill="LightGray" Margin="32,95,744,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="TAB" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,100,0,0"/>
+            <!--A-->
+            <Rectangle x:Name="RA" Fill="LightGray" Margin="63,95,712,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="A" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="69,100,0,0"/>
+            <!--Z-->
+            <Rectangle x:Name="RZ" Fill="LightGray" Margin="96,95,679,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Z" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,100,0,0"/>
+            <!--E-->
+            <Rectangle x:Name="RE" Fill="LightGray" Margin="126,95,649,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="E" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,100,0,0"/>
+            <TextBlock Text="€" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="143,105,0,0"/>
+            <!--R-->
+            <Rectangle x:Name="RR" Fill="LightGray" Margin="156,95,619,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="R" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="165,100,0,0"/>
+            <!--T-->
+            <Rectangle x:Name="RT" Fill="LightGray" Margin="186,95,589,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="T" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="195,100,0,0"/>
+            <!--Y-->
+            <Rectangle x:Name="RY" Fill="LightGray" Margin="214,95,561,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Y" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="223,100,0,0"/>
+            <!--U-->
+            <Rectangle x:Name="RU" Fill="LightGray" Margin="244,95,531,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="U" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="252,100,0,0"/>
+            <!--I-->
+            <Rectangle x:Name="RI" Fill="LightGray" Margin="274,95,501,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="I" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="285,100,0,0"/>
+            <!--O-->
+            <Rectangle x:Name="RO" Fill="LightGray" Margin="304,95,471,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="O" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="312,100,0,0"/>
+            <!--P-->
+            <Rectangle x:Name="RP" Fill="LightGray" Margin="334,95,441,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="P" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="342,100,0,0"/>
+            <!--^-->
+            <Rectangle x:Name="RPiramid" Fill="LightGray" Margin="364,95,411,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="^" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="365,105,0,0"/>
+            <TextBlock Text="¨" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,94,0,0"/>
+            <TextBlock Text="[" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="382,103,0,0"/>
+            <!--$-->
+            <Rectangle x:Name="RDollar" Fill="LightGray" Margin="392,95,382,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="395,94,0,0"/>
+            <TextBlock Text="$" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="394,103,0,0"/>
+            <TextBlock Text="]" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,104,0,0"/>
+            <!--Enter-->
+            <Rectangle x:Name="REnter" Fill="LightGray" Height="57" Canvas.Left="447" Canvas.Top="95" Width="56">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="461,100,0,0"/>
+            <!--Delete-->
+            <Rectangle x:Name="RDel" Fill="LightGray" Margin="511,95,264,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Del" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="515,99,0,0"/>
+            <!--End-->
+            <Rectangle x:Name="REnd" Fill="LightGray" Margin="539,95,236,314" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="End" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="542,99,0,0"/>
+            <!--Page Down-->
+            <Rectangle x:Name="RPagedown" Fill="LightGray" Margin="566,95,209,314" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Down" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="568,102,0,0" FontSize="8"/>
+            <!--7-->
+            <Rectangle x:Name="R7" Fill="LightGray" Margin="628,94,147,315" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,99,0,0"/>
+            <!--8-->
+            <Rectangle x:Name="R8" Fill="LightGray" Margin="658,94,117,315" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="667,99,0,0"/>
+            <!--9-->
+            <Rectangle x:Name="R9" Fill="LightGray" Margin="688,94,87,315" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="697,99,0,0"/>
+            <!--+-->
+            <Rectangle x:Name="RPlus" Fill="LightGray" Width="25" Height="52" Canvas.Left="717" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="725,100,0,0"/>
+            <!--Caps Lock-->
+            <Rectangle x:Name="RCapslock" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="127" Width="37">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Caps" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,132,0,0"/>
+            <!--Q-->
+            <Rectangle x:Name="RQ" Fill="LightGray" Margin="74,127,701,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Q" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,132,0,0"/>
+            <!--S-->
+            <Rectangle x:Name="RS" Fill="LightGray" Margin="105,127,670,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="S" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,132,0,0"/>
+            <!--D-->
+            <Rectangle x:Name="RD" Fill="LightGray" Margin="135,127,640,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="D" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="143,132,0,0"/>
+            <!--F-->
+            <Rectangle x:Name="RF" Fill="LightGray" Margin="165,127,610,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="F" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,132,0,0"/>
+            <!--G-->
+            <Rectangle x:Name="RG" Fill="LightGray" Margin="195,127,580,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="G" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,132,0,0"/>
+            <!--H-->
+            <Rectangle x:Name="RH" Fill="LightGray" Margin="225,127,550,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="H" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,132,0,0"/>
+            <!--J-->
+            <Rectangle x:Name="RJ" Fill="LightGray" Margin="256,127,519,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="J" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="266,132,0,0"/>
+            <!--K-->
+            <Rectangle x:Name="RK" Fill="LightGray" Margin="287,127,488,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="K" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="296,132,0,0"/>
+            <!--L-->
+            <Rectangle x:Name="RL" Fill="LightGray" Margin="317,127,458,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="L" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="327,132,0,0"/>
+            <!--M-->
+            <Rectangle x:Name="RM" Fill="LightGray" Margin="346,127,428,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="M" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="354,132,0,0"/>
+            <!--ù-->
+            <Rectangle x:Name="Rù" Fill="LightGray" Margin="376,127,398,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="ù" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,136,0,0"/>
+            <TextBlock Text="%" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="378,125,0,0"/>
+            <TextBlock Text="´" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="394,140,0,0"/>
+            <!--µ-->
+            <Rectangle x:Name="Rµ" Fill="LightGray" Margin="408,127,367,282" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="µ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,135,0,0"/>
+            <TextBlock Text="£" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,125,0,0"/>
+            <TextBlock Text="`" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="427,141,0,0"/>
+            <!--4-->
+            <Rectangle x:Name="R4" Fill="LightGray" Margin="628,122,146,287" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,127,0,0"/>
+            <!--5-->
+            <Rectangle x:Name="R5" Fill="LightGray" Margin="658,122,117,287" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,127,0,0"/>
+            <!--6-->
+            <Rectangle x:Name="R6" Fill="LightGray" Margin="688,122,86,287" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="698,127,0,0"/>
+            <!--LeftShift-->
+            <Rectangle x:Name="RLeftshift" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="157" Width="32">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,162,0,0"/>
+            <!--<-->
+            <Rectangle x:Name="RBek" Fill="LightGray" Margin="69,157,706,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text=">" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="77,162,0,0"/>
+            <!--W-->
+            <Rectangle x:Name="RW" Fill="LightGray" Margin="99,157,676,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="W" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,162,0,0"/>
+            <!--X-->
+            <Rectangle x:Name="RX" Fill="LightGray" Margin="126,157,649,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="134,162,0,0"/>
+            <!--C-->
+            <Rectangle x:Name="RC" Fill="LightGray" Margin="156,157,619,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="C" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="166,162,0,0"/>
+            <!--V-->
+            <Rectangle x:Name="RV" Fill="LightGray" Margin="184,157,591,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="V" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="193,162,0,0"/>
+            <!--B-->
+            <Rectangle x:Name="RB" Fill="LightGray" Margin="214,157,561,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="B" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="223,162,0,0"/>
+            <!--N-->
+            <Rectangle x:Name="RN" Fill="LightGray" Margin="244,157,531,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="N" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="251,162,0,0"/>
+            <!--,-->
+            <Rectangle x:Name="RQuestion" Fill="LightGray" Margin="274,157,500,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="," HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,162,0,0"/>
+            <TextBlock Text="?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="277,157,0,0"/>
+            <!--;-->
+            <Rectangle x:Name="RPunt" Fill="LightGray" Margin="305,157,470,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text=";" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="315,162,0,0"/>
+            <TextBlock Text="." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="307,151,0,0"/>
+            <!--:-->
+            <Rectangle x:Name="RDubbelpunt" Fill="LightGray" Margin="334,157,441,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text=":" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="345,162,0,0"/>
+            <TextBlock Text="/" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="335,155,0,0"/>
+            <!--=-->
+            <Rectangle x:Name="Recual" Fill="LightGray" Margin="364,157,411,252" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,164,0,0"/>
+            <TextBlock Text="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="366,155,0,0"/>
+            <TextBlock Text="~" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,165,0,0"/>
+            <!--RightShift-->
+            <Rectangle x:Name="RRightshift" Fill="LightGray" Height="25" Canvas.Left="400" Canvas.Top="157" Width="103" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="435,162,0,0"/>
+            <!--ArrowUp-->
+            <Rectangle x:Name="RArrowup" Fill="LightGray" Margin="540,161,236,248" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <Image Source="arrow.png" RenderTransformOrigin="0.5,0.5" Height="21" Canvas.Left="541" Canvas.Top="162" Width="23" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <!--1-->
+            <Rectangle x:Name="R1" Fill="LightGray" Margin="629,152,146,257" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,157,0,0"/>
+            <!--2-->
+            <Rectangle x:Name="R2" Fill="LightGray" Margin="658,152,117,257" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="667,157,0,0"/>
+            <!--3-->
+            <Rectangle x:Name="R3" Fill="LightGray" Margin="689,152,86,257" Width="25" Height="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="699,157,0,0"/>
+            <!--NumEnter-->
+            <Rectangle x:Name="RNumEnter" Fill="LightGray" Width="25" Height="60" Canvas.Left="717" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="718,157,0,0" FontSize="10"/>
+            <!--LeftCtrl-->
+            <Rectangle x:Name="RLeftctrl" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="187" Width="37">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Ctrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,192,0,0"/>
+            <!--Windows-->
+            <Rectangle x:Name="RWindows" Fill="LightGray" Margin="74,187,701,222" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <Image Source="windows.png" Height="17" Canvas.Left="78" Canvas.Top="191" Width="18"/>
+            <!--Alt-->
+            <Rectangle x:Name="RAlt" Fill="LightGray" Margin="104,187,671,222" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Alt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,192,0,0"/>
+            <!--Space-->
+            <Rectangle x:Name="RSpace" Fill="LightGray" Height="25" Canvas.Left="134" Canvas.Top="187" Width="179">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Space" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,192,0,0"/>
+            <!--Alt gr-->
+            <Rectangle x:Name="RAltgr" Fill="LightGray" Height="25" Canvas.Left="318" Canvas.Top="187" Width="40">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Alt gr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="322,192,0,0"/>
+            <!--Fn-->
+            <Rectangle x:Name="RFn" Fill="LightGray" Margin="362,187,412,222" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Fn" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="369,191,0,0"/>
+            <!--Menu-->
+            <Rectangle x:Name="RMenu" Fill="LightGray" Height="25" Canvas.Left="400" Canvas.Top="187" Width="52">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <Image Source="menu.png" Height="27" Canvas.Left="411" Canvas.Top="187" Width="30" />
+            <!--RightCtrl-->
+            <Rectangle x:Name="Rrightctrl" Fill="LightGray" Height="25" Canvas.Left="457" Canvas.Top="187" Width="46">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="Ctrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="470,191,0,0"/>
+            <!--ArrowLeft-->
+            <Rectangle x:Name="RArrowleft" Fill="LightGray" Margin="513,188,262,221" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <Image Source="arrow.png" Height="34" Canvas.Left="514" Canvas.Top="184" Width="23" />
+            <!--ArrowDown-->
+            <Rectangle x:Name="RArrowdown" Fill="LightGray" Margin="540,188,235,221" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <Image Source="arrow.png" RenderTransformOrigin="0.5,0.5" Height="23" Canvas.Left="541" Canvas.Top="189" Width="23" HorizontalAlignment="Center" VerticalAlignment="Top" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <!--ArrowRight-->
+            <Rectangle x:Name="RArrowright" Fill="LightGray" Margin="567,188,208,221" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <Image Source="arrow.png" RenderTransformOrigin="0.5,0.5" Height="26" Canvas.Left="567" Canvas.Top="188" Width="26" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <!--0-->
+            <Rectangle x:Name="R0" Fill="LightGray" Height="25" Canvas.Left="628" Canvas.Top="188" Width="56">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="652,193,0,0"/>
+            <!--Numpunt-->
+            <Rectangle x:Name="RNumpunt" Fill="LightGray" Margin="689,188,86,221" Height="25" Width="25">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+            <TextBlock Text="." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="700,192,0,0"/>
+        </Canvas>
     </Grid>
 </Window>
+
+

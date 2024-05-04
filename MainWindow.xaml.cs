@@ -22,10 +22,124 @@ namespace Project_Keyboard_Tester
             
 
         }
-        /*private void Window_KeyDown(object sender, KeyEventArgs e)
+        private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.Key)
             {
+                case Key.Escape:
+                    RESC.Fill = Brushes.Green;
+                    break;
+                case Key.F1:
+                    RF1.Fill = Brushes.Green;
+                    break;
+                case Key.F2:
+                    RF2.Fill = Brushes.Green;
+                    break;
+                case Key.F3:
+                    RF3.Fill = Brushes.Green;
+                    break;
+                case Key.F4:
+                    RF4.Fill = Brushes.Green;
+                    break;
+                case Key.F5:
+                    RF5.Fill = Brushes.Green;
+                    break;
+                case Key.F6:
+                    RF6.Fill = Brushes.Green;
+                    break;
+                case Key.F7:
+                    RF7.Fill = Brushes.Green;
+                    break;
+                case Key.F8:
+                    RF8.Fill = Brushes.Green;
+                    break;
+                case Key.F9:
+                    RF9.Fill = Brushes.Green;
+                    break;
+                case Key.F10:
+                    RF10.Fill = Brushes.Green;
+                    break;
+                case Key.F11:
+                    RF11.Fill = Brushes.Green;
+                    break;
+                case Key.F12:
+                    RF12.Fill = Brushes.Green;
+                    break;
+                case Key.PrintScreen:
+                    RPrntscrn.Fill = Brushes.Green;
+                    break;
+                case Key.Scroll:
+                    RScrlllck.Fill = Brushes.Green;
+                    break;
+                case Key.Pause:
+                    RPause.Fill = Brushes.Green;
+                    break;
+                case Key.Oem1:
+                    RMacht.Fill = Brushes.Green;
+                    break;
+                case Key.D1:
+                    Rone.Fill = Brushes.Green;
+                    break;
+                case Key.D2:
+                    Rtwo.Fill = Brushes.Green;
+                    break;
+                case Key.D3:
+                    Rthree.Fill = Brushes.Green;
+                    break;
+                case Key.D4:
+                    Rfour.Fill = Brushes.Green;
+                    break;
+                case Key.D5:
+                    Rfive.Fill = Brushes.Green;
+                    break;
+                case Key.D6:
+                    Rsix.Fill = Brushes.Green;
+                    break;
+                case Key.D7:
+                    Rseven.Fill = Brushes.Green;
+                    break;
+                case Key.D8:
+                    Reight.Fill = Brushes.Green;
+                    break;
+                case Key.D9:
+                    Rnine.Fill = Brushes.Green;
+                    break;
+                case Key.D0:
+                    Rzero.Fill = Brushes.Green;
+                    break;
+                case Key.OemTilde:
+                    RCelcius.Fill = Brushes.Green;
+                    break;
+                case Key.OemMinus:
+                    R_.Fill = Brushes.Green;
+                    break;
+                case Key.Back:
+                    RBack.Fill = Brushes.Green;
+                    break;
+                case Key.Insert:
+                    RInsert.Fill = Brushes.Green;
+                    break;
+                case Key.Home:
+                    RHome.Fill = Brushes.Green;
+                    break;
+                case Key.PageUp:
+                    RUp.Fill = Brushes.Green;
+                    break;
+                case Key.NumLock:
+                    RNumlock.Fill = Brushes.Green;
+                    break;
+                case Key.Divide:
+                    RDash.Fill = Brushes.Green;
+                    break;
+                case Key.Multiply:
+                    RMultipl.Fill = Brushes.Green;
+                    break;
+                case Key.Subtract:
+                    RStreep.Fill = Brushes.Green;
+                    break;
+                case Key.Tab:
+                    RTab.Fill = Brushes.Green;
+                    break;
                 case Key.A:
                     RA.Fill = Brushes.Green;
                     break;
@@ -38,9 +152,109 @@ namespace Project_Keyboard_Tester
                 case Key.R:
                     RR.Fill = Brushes.Green;
                     break;
+                case Key.T:
+                    RT.Fill = Brushes.Green;
+                    break;
+                case Key.Y:
+                    RY.Fill = Brushes.Green;
+                    break;
+                case Key.U:
+                    RU.Fill = Brushes.Green;
+                    break;
+                case Key.I:
+                    RI.Fill = Brushes.Green;
+                    break;
+                case Key.O:
+                    RO.Fill = Brushes.Green;
+                    break;
+                case Key.P:
+                    RP.Fill = Brushes.Green;
+                    break;
+                case Key.Oem6:
+                    RPiramid.Fill = Brushes.Green;
+                    break;
+                case Key.Oem5:
+                    RDollar.Fill = Brushes.Green;
+                    break;
+                case Key.Enter:
+                    REnter.Fill = Brushes.Green;
+                    break;
+                case Key.Delete:
+                    RDel.Fill = Brushes.Green;
+                    break;
+                case Key.End:
+                    REnd.Fill = Brushes.Green;
+                    break;
+                case Key.PageDown:
+                    RPagedown.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad7:
+                    R7.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad8:
+                    R8.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad9:
+                    R9.Fill = Brushes.Green;
+                    break;
+                case Key.OemPlus:
+                    RPlus.Fill = Brushes.Green;
+                    break;
+                case Key.CapsLock:
+                    RCapslock.Fill = Brushes.Green;
+                    break;
+                case Key.Q:
+                    RQ.Fill = Brushes.Green;
+                    break;
+                case Key.S:
+                    RS.Fill = Brushes.Green;
+                    break;
+                case Key.D:
+                    RD.Fill = Brushes.Green;
+                    break;
+                case Key.F:
+                    RF.Fill = Brushes.Green;
+                    break;
+                case Key.G:
+                    RG.Fill = Brushes.Green;
+                    break;
+                case Key.H:
+                    RH.Fill = Brushes.Green;
+                    break;
+                case Key.J:
+                    RJ.Fill = Brushes.Green;
+                    break;
+                case Key.K:
+                    RK.Fill = Brushes.Green;
+                    break;
+                case Key.L:
+                    RL.Fill = Brushes.Green;
+                    break;
+                case Key.M:
+                    RM.Fill = Brushes.Green;
+                    break;
+                /*case Key.Oem3:
+                    Rù.Fill = Brushes.Green;
+                    break;*/
+                case Key.OemComma:
+                    Rµ.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad4:
+                    R4.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad5:
+                    R5.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad6:
+                    R6.Fill = Brushes.Green;
+                    break;
+
+
+
+
                 default:
                     break;
             }
-        ¨*/
+        }
     }
 }
