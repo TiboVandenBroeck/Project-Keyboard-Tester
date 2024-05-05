@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Project_Keyboard_Tester"
         mc:Ignorable="d"
         Title="Keyboard Test programma" Height="280" Width="800"
-        KeyDown="Window_KeyDown">
+        KeyDown="Window_KeyDown"
+        PreviewKeyDown="Window_PreviewKeyDown">
 
     <Grid>
         <Canvas Height="250" Width="800">
@@ -81,7 +82,7 @@
             </Rectangle>
             <TextBlock Text="F9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="390,29,0,0"/>
             <!--F10-->
-            <Rectangle x:Name="RF10" Fill="LightGray" Margin="416,25,359,384" Width="25" Height="25">
+            <Rectangle x:Name="RF100" Fill="LightGray" Margin="416,25,359,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>

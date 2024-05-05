@@ -19,11 +19,31 @@ namespace Project_Keyboard_Tester
         public MainWindow()
         {
             InitializeComponent();
-            
+            PreviewKeyDown += Window_PreviewKeyDown;
 
         }
+        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F10)
+            {
+                // Code om F10-toetsaanslag te verwerken
+                RF100.Fill = Brushes.Green;
+            }
+
+        }
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+
+            switch (e.Key)
+            {
+                case Key.Enter when Keyboard.IsKeyToggled(Key.NumLock):
+                    RNumEnter.Fill = Brushes.Green;
+                    break;
+                default:
+                    break;
+
+            }
             switch (e.Key)
             {
                 case Key.Escape:
@@ -56,15 +76,16 @@ namespace Project_Keyboard_Tester
                 case Key.F9:
                     RF9.Fill = Brushes.Green;
                     break;
-                case Key.F10:
-                    RF10.Fill = Brushes.Green;
-                    break;
+                /*case Key.F10:
+                    RF100.Fill = Brushes.Green;
+                    break;*/
                 case Key.F11:
                     RF11.Fill = Brushes.Green;
                     break;
                 case Key.F12:
                     RF12.Fill = Brushes.Green;
                     break;
+                    //wordt weldegelijk ingeduwd maar geeft niets terug.
                 case Key.PrintScreen:
                     RPrntscrn.Fill = Brushes.Green;
                     break;
@@ -74,7 +95,7 @@ namespace Project_Keyboard_Tester
                 case Key.Pause:
                     RPause.Fill = Brushes.Green;
                     break;
-                case Key.Oem1:
+                case Key.OemQuotes:
                     RMacht.Fill = Brushes.Green;
                     break;
                 case Key.D1:
@@ -107,8 +128,11 @@ namespace Project_Keyboard_Tester
                 case Key.D0:
                     Rzero.Fill = Brushes.Green;
                     break;
-                case Key.OemTilde:
+                case Key.OemOpenBrackets:
                     RCelcius.Fill = Brushes.Green;
+                    break;
+                case Key.OemCloseBrackets:
+                    RPiramid.Fill = Brushes.Green;
                     break;
                 case Key.OemMinus:
                     R_.Fill = Brushes.Green;
@@ -170,13 +194,10 @@ namespace Project_Keyboard_Tester
                 case Key.P:
                     RP.Fill = Brushes.Green;
                     break;
-                case Key.Oem6:
-                    RPiramid.Fill = Brushes.Green;
-                    break;
-                case Key.Oem5:
+                case Key.Oem1:
                     RDollar.Fill = Brushes.Green;
                     break;
-                case Key.Enter:
+                case Key.Enter when !Keyboard.IsKeyToggled(Key.NumLock):
                     REnter.Fill = Brushes.Green;
                     break;
                 case Key.Delete:
@@ -197,7 +218,7 @@ namespace Project_Keyboard_Tester
                 case Key.NumPad9:
                     R9.Fill = Brushes.Green;
                     break;
-                case Key.OemPlus:
+                case Key.Add:
                     RPlus.Fill = Brushes.Green;
                     break;
                 case Key.CapsLock:
@@ -233,10 +254,10 @@ namespace Project_Keyboard_Tester
                 case Key.M:
                     RM.Fill = Brushes.Green;
                     break;
-                /*case Key.Oem3:
+                case Key.Oem3:
                     Rù.Fill = Brushes.Green;
-                    break;*/
-                case Key.OemComma:
+                    break;
+                case Key.Oem5:
                     Rµ.Fill = Brushes.Green;
                     break;
                 case Key.NumPad4:
@@ -248,13 +269,99 @@ namespace Project_Keyboard_Tester
                 case Key.NumPad6:
                     R6.Fill = Brushes.Green;
                     break;
-
-
-
-
+                case Key.LeftShift:
+                    RLeftshift.Fill = Brushes.Green;
+                    break;
+                case Key.OemBackslash:
+                    RBek.Fill = Brushes.Green;
+                    break;
+                case Key.W:
+                    RW.Fill = Brushes.Green;
+                    break;
+                case Key.X:
+                    RX.Fill = Brushes.Green;
+                    break;
+                case Key.C:
+                    RC.Fill = Brushes.Green;
+                    break;
+                case Key.V:
+                    RV.Fill = Brushes.Green;
+                    break;
+                case Key.B:
+                    RB.Fill = Brushes.Green;
+                    break;
+                case Key.N:
+                    RN.Fill = Brushes.Green;
+                    break;
+                case Key.OemComma:
+                    RQuestion.Fill = Brushes.Green;
+                    break;
+                case Key.OemPeriod:
+                    RPunt.Fill = Brushes.Green;
+                    break;
+                case Key.Oem2:
+                    RDubbelpunt.Fill = Brushes.Green;
+                    break;
+                case Key.OemPlus:
+                    Recual.Fill = Brushes.Green;
+                    break;
+                case Key.RightShift:
+                    RRightshift.Fill = Brushes.Green;
+                    break;
+                case Key.Up:
+                    RArrowup.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad1:
+                    R1.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad2:
+                    R2.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad3:
+                    R3.Fill = Brushes.Green;
+                    break;
+                case Key.LeftCtrl:
+                    RLeftctrl.Fill = Brushes.Green;
+                    break;
+                case Key.LWin:
+                    RWindows.Fill = Brushes.Green;
+                    break;
+                case Key.LeftAlt:
+                    RAlt.Fill = Brushes.Green;
+                    break;
+                case Key.RightAlt:
+                    RAltgr.Fill = Brushes.Green;
+                    break;
+                case Key.Space:
+                    RSpace.Fill = Brushes.Green;
+                    break;
+                //functie key kan niet getecteerd worden!!!!
+                case Key.Apps:
+                    RMenu.Fill = Brushes.Green;
+                    break;
+                case Key.RightCtrl:
+                    Rrightctrl.Fill = Brushes.Green;
+                    break;
+                case Key.Left:
+                    RArrowleft.Fill = Brushes.Green;
+                    break;
+                case Key.Down:
+                    RArrowdown.Fill = Brushes.Green;
+                    break;
+                case Key.Right:
+                    RArrowright.Fill = Brushes.Green;
+                    break;
+                case Key.NumPad0:
+                    R0.Fill = Brushes.Green;
+                    break;
+                case Key.Decimal:
+                    RNumpunt.Fill = Brushes.Green;
+                    break;
                 default:
                     break;
             }
         }
+
+
     }
 }
