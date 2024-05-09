@@ -34,6 +34,11 @@ namespace Project_Keyboard_Tester
             keychecker = new Keychecker();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.Focus();
+        }
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             keychecker.AddWorkingKey(e.Key.ToString());

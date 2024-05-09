@@ -8,7 +8,9 @@
         Title="AZERTY" Height="300" Width="1020"
         KeyDown="Window_KeyDown"
         Background="White"
-        WindowStartupLocation = "CenterScreen">
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+
 
     <Grid>
         <Canvas Height="250" Margin="20,10,62,24">
