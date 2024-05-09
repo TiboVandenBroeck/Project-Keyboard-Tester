@@ -42,6 +42,7 @@ namespace Project_Keyboard_Tester
             {
                 case Key.Enter when Keyboard.IsKeyToggled(Key.NumLock):
                     REnter.Fill = Brushes.Green;
+                    keychecker.AddWorkingKey("REnter");
                     break;
                 default:
                     break;
