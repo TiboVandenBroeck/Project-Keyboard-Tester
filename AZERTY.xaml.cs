@@ -12,24 +12,13 @@ using System.Windows.Shapes;
 namespace Project_Keyboard_Tester
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AZERTY.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AZERTY : Window
     {
-        public MainWindow()
+        public AZERTY()
         {
             InitializeComponent();
-            PreviewKeyDown += Window_PreviewKeyDown;
-
-        }
-        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.F10)
-            {
-                // Code om F10-toetsaanslag te verwerken
-                RF100.Fill = Brushes.Green;
-            }
-
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -76,9 +65,9 @@ namespace Project_Keyboard_Tester
                 case Key.F9:
                     RF9.Fill = Brushes.Green;
                     break;
-                /*case Key.F10:
-                    RF100.Fill = Brushes.Green;
-                    break;*/
+                case Key.F10:
+                    RF10.Fill = Brushes.Green;
+                    break;
                 case Key.F11:
                     RF11.Fill = Brushes.Green;
                     break;
