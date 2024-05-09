@@ -16,5 +16,33 @@ namespace Project_Keyboard_Tester
         {
             return "Kies een keyboard type";
         }
+        public override string GreenMessage()
+        {
+            return "Groen = Succesvol ingedrukt";
+        }
+
+        public override string GrayMessage()
+        {
+            return "Grijs = Niet ingedrukt / Onsuccesvol";
+        }
+
+        public override string JsonSaveTxtMessage()
+        {
+            return "Zet hier de naam die u het bestand wilt geven.";
+        }
+
+        public override string JsonSearchTxtMessage()
+        {
+            return "Plaats hier de naam van uw json-bestand.";
+        }
+        public override string JsonSaveBtnTxtMessage()
+        {
+            return "Opslaan in Json";
+        }
+
+        public override string JsonSearchBtnTxtMessage()
+        {
+            return "Gebruik bestaand bestand";
+        }
     }
 }

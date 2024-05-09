@@ -5,14 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Keyboard_Tester"
         mc:Ignorable="d"
-        Title="taalselect" Height="450" Width="800">
+        Title="TaalSelect" Height="225" Width="323"
+        WindowStartupLocation = "CenterScreen">
     <Grid>
-        <Button Content="Nederlands" HorizontalAlignment="Left" Margin="22,118,0,0" VerticalAlignment="Top" Click="NederlandsButton_Click"/>
-        <Button Content="Français" HorizontalAlignment="Left" Margin="122,118,0,0" VerticalAlignment="Top" Click="FransButton_Click"/>
-        <Button Content="Español" HorizontalAlignment="Left" Margin="207,118,0,0" VerticalAlignment="Top" Click="SpaansButton_Click"/>
-        <Label Content="Hello" HorizontalAlignment="Left" Margin="35,92,0,0" VerticalAlignment="Top"/>
-        <Label Content="Bonjour" HorizontalAlignment="Left" Margin="127,92,0,0" VerticalAlignment="Top"/>
-        <Label Content="Hola" HorizontalAlignment="Left" Margin="212,92,0,0" VerticalAlignment="Top"/>
-
+        <Canvas Margin="-10,-17,10,17">
+            <Button Content="Nederlands" HorizontalAlignment="Center" VerticalAlignment="Top" Click="NederlandsButton_Click" Height="29" Width="78"
+                Background="#FF4CAF50" Foreground="White" FontSize="14" FontWeight="Bold" BorderThickness="1" BorderBrush="#FF4CAF50" Canvas.Left="212" Canvas.Top="62"/>
+            <Button Content="Français" HorizontalAlignment="Left" VerticalAlignment="Top" Click="FransButton_Click" Height="28" Width="56"
+                   Background="#FF2196F3" Foreground="White" FontSize="14" FontWeight="Bold" BorderThickness="1" BorderBrush="#FF2196F3" Canvas.Left="212" Canvas.Top="94"/>
+            <Button Content="Español" HorizontalAlignment="Left" VerticalAlignment="Center" Click="SpaansButton_Click" Height="29" Width="54"
+                    Background="#FFFF9800" Foreground="White" FontSize="14" FontWeight="Bold" BorderThickness="1" BorderBrush="#FFFF9800" Canvas.Left="212" Canvas.Top="127"/>
+            <Label Content="Selecteer uw taal:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="37" Width="122" FontSize="14" Canvas.Left="52" Canvas.Top="64"/>
+            <Label Content="Choisissez votre langue:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" Width="164" FontSize="14" Canvas.Left="52" Canvas.Top="92"/>
+            <Label Content="Elige tu idioma:" HorizontalAlignment="Left" Margin="52,123,0,0" VerticalAlignment="Top" Height="37" Width="110" FontSize="14"/>
+        </Canvas>
     </Grid>
 </Window>

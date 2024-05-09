@@ -16,5 +16,33 @@ namespace Project_Keyboard_Tester
         {
             return "Choisissez un type de clavier";
         }
+        public override string GreenMessage()
+        {
+            return "Vert = Appui réussi";
+        }
+
+        public override string GrayMessage()
+        {
+            return "Gris = Pas pressé / Échec";
+        }
+        public override string JsonSaveTxtMessage()
+        {
+            return "Entrez ici le nom que vous souhaitez donner au fichier.";
+        }
+
+        public override string JsonSearchTxtMessage()
+        {
+            return "Placez le nom de votre fichier json ici.";
+        }
+        public override string JsonSaveBtnTxtMessage()
+        {
+            return "Enregistrer dans Json";
+        }
+
+        public override string JsonSearchBtnTxtMessage()
+        {
+            return "Utiliser le fichier existant";
+        }
     }
 }
+

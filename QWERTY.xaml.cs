@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
+using System.IO;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -14,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Media.Media3D;
 using System.Windows.Shapes;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Project_Keyboard_Tester
 {
@@ -22,18 +25,30 @@ namespace Project_Keyboard_Tester
     /// </summary>
     public partial class QWERTY : Window
     {
-        public QWERTY()
+        private Keychecker keychecker;
+
+        public QWERTY(string GreenLabelText, string GrayLabelText, string JsonSaveText, string JsonSearchText, string JsonSaveBtnText, string JsonSearchBtnText)
         {
             InitializeComponent();
+
+            greenlbl.Content = GreenLabelText;
+            grijslbl.Content = GrayLabelText;
+            jsonsavetextbox.Text = JsonSaveText;
+            jsonsearchtextbox.Text = JsonSearchText;
+            Jsonsavebtn.Content = JsonSaveBtnText;
+            jsonopenbtn.Content = JsonSearchBtnText;
+
+            keychecker = new Keychecker();
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+            keychecker.AddWorkingKey(e.Key.ToString());
 
             switch (e.Key)
             {
                 case Key.Enter when Keyboard.IsKeyToggled(Key.NumLock):
-                    RNumEnter.Fill = Brushes.Green;
+                    REnter.Fill = Brushes.Green;
                     break;
                 default:
                     break;
@@ -42,316 +57,375 @@ namespace Project_Keyboard_Tester
             switch (e.Key)
             {
                 case Key.Escape:
-                    RESC.Fill = Brushes.Green;
+                    Escape.Fill = Brushes.Green;
                     break;
                 case Key.F1:
-                    RF1.Fill = Brushes.Green;
+                    F1.Fill = Brushes.Green;
                     break;
                 case Key.F2:
-                    RF2.Fill = Brushes.Green;
+                    F2.Fill = Brushes.Green;
                     break;
                 case Key.F3:
-                    RF3.Fill = Brushes.Green;
+                    F3.Fill = Brushes.Green;
                     break;
                 case Key.F4:
-                    RF4.Fill = Brushes.Green;
+                    F4.Fill = Brushes.Green;
                     break;
                 case Key.F5:
-                    RF5.Fill = Brushes.Green;
+                    F5.Fill = Brushes.Green;
                     break;
                 case Key.F6:
-                    RF6.Fill = Brushes.Green;
+                    F6.Fill = Brushes.Green;
                     break;
                 case Key.F7:
-                    RF7.Fill = Brushes.Green;
+                    F7.Fill = Brushes.Green;
                     break;
                 case Key.F8:
-                    RF8.Fill = Brushes.Green;
+                    F8.Fill = Brushes.Green;
                     break;
                 case Key.F9:
-                    RF9.Fill = Brushes.Green;
+                    F9.Fill = Brushes.Green;
                     break;
                 case Key.F10:
-                    RF10.Fill = Brushes.Green;
+                    F10.Fill = Brushes.Green;
                     break;
                 case Key.F11:
-                    RF11.Fill = Brushes.Green;
+                    F11.Fill = Brushes.Green;
                     break;
                 case Key.F12:
-                    RF12.Fill = Brushes.Green;
+                    F12.Fill = Brushes.Green;
                     break;
                 //wordt weldegelijk ingeduwd maar geeft niets terug.
                 case Key.PrintScreen:
-                    RPrntscrn.Fill = Brushes.Green;
+                    PrintScreen.Fill = Brushes.Green;
                     break;
                 case Key.Scroll:
-                    RScrlllck.Fill = Brushes.Green;
+                    Scroll.Fill = Brushes.Green;
                     break;
                 case Key.Pause:
-                    RPause.Fill = Brushes.Green;
+                    Pause.Fill = Brushes.Green;
                     break;
                 case Key.OemQuotes:
-                    RMacht.Fill = Brushes.Green;
+                    OemQuotes.Fill = Brushes.Green;
                     break;
                 case Key.D1:
-                    Rone.Fill = Brushes.Green;
+                    D1.Fill = Brushes.Green;
                     break;
                 case Key.D2:
-                    Rtwo.Fill = Brushes.Green;
+                    D2.Fill = Brushes.Green;
                     break;
                 case Key.D3:
-                    Rthree.Fill = Brushes.Green;
+                    D3.Fill = Brushes.Green;
                     break;
                 case Key.D4:
-                    Rfour.Fill = Brushes.Green;
+                    D4.Fill = Brushes.Green;
                     break;
                 case Key.D5:
-                    Rfive.Fill = Brushes.Green;
+                    D5.Fill = Brushes.Green;
                     break;
                 case Key.D6:
-                    Rsix.Fill = Brushes.Green;
+                    D6.Fill = Brushes.Green;
                     break;
                 case Key.D7:
-                    Rseven.Fill = Brushes.Green;
+                    D7.Fill = Brushes.Green;
                     break;
                 case Key.D8:
-                    Reight.Fill = Brushes.Green;
+                    D8.Fill = Brushes.Green;
                     break;
                 case Key.D9:
-                    Rnine.Fill = Brushes.Green;
+                    D9.Fill = Brushes.Green;
                     break;
                 case Key.D0:
-                    Rzero.Fill = Brushes.Green;
+                    D0.Fill = Brushes.Green;
                     break;
                 case Key.OemOpenBrackets:
-                    RCelcius.Fill = Brushes.Green;
+                    OemOpenBrackets.Fill = Brushes.Green;
                     break;
                 case Key.OemCloseBrackets:
-                    RPiramid.Fill = Brushes.Green;
+                    OemCloseBrackets.Fill = Brushes.Green;
                     break;
                 case Key.OemMinus:
-                    R_.Fill = Brushes.Green;
+                    OemMinus.Fill = Brushes.Green;
                     break;
                 case Key.Back:
-                    RBack.Fill = Brushes.Green;
+                    Back.Fill = Brushes.Green;
                     break;
                 case Key.Insert:
-                    RInsert.Fill = Brushes.Green;
+                    Insert.Fill = Brushes.Green;
                     break;
                 case Key.Home:
-                    RHome.Fill = Brushes.Green;
+                    Home.Fill = Brushes.Green;
                     break;
                 case Key.PageUp:
-                    RUp.Fill = Brushes.Green;
+                    PageUp.Fill = Brushes.Green;
                     break;
                 case Key.NumLock:
-                    RNumlock.Fill = Brushes.Green;
+                    NumLock.Fill = Brushes.Green;
                     break;
                 case Key.Divide:
-                    RDash.Fill = Brushes.Green;
+                    Divide.Fill = Brushes.Green;
                     break;
                 case Key.Multiply:
-                    RMultipl.Fill = Brushes.Green;
+                    Multiply.Fill = Brushes.Green;
                     break;
                 case Key.Subtract:
-                    RStreep.Fill = Brushes.Green;
+                    Subtract.Fill = Brushes.Green;
                     break;
                 case Key.Tab:
-                    RTab.Fill = Brushes.Green;
+                    Tab.Fill = Brushes.Green;
                     break;
                 case Key.A:
-                    RA.Fill = Brushes.Green;
+                    A.Fill = Brushes.Green;
                     break;
                 case Key.Z:
-                    RZ.Fill = Brushes.Green;
+                    Z.Fill = Brushes.Green;
                     break;
                 case Key.E:
-                    RE.Fill = Brushes.Green;
+                    E.Fill = Brushes.Green;
                     break;
                 case Key.R:
-                    RR.Fill = Brushes.Green;
+                    R.Fill = Brushes.Green;
                     break;
                 case Key.T:
-                    RT.Fill = Brushes.Green;
+                    T.Fill = Brushes.Green;
                     break;
                 case Key.Y:
-                    RY.Fill = Brushes.Green;
+                    Y.Fill = Brushes.Green;
                     break;
                 case Key.U:
-                    RU.Fill = Brushes.Green;
+                    U.Fill = Brushes.Green;
                     break;
                 case Key.I:
-                    RI.Fill = Brushes.Green;
+                    I.Fill = Brushes.Green;
                     break;
                 case Key.O:
-                    RO.Fill = Brushes.Green;
+                    O.Fill = Brushes.Green;
                     break;
                 case Key.P:
-                    RP.Fill = Brushes.Green;
+                    P.Fill = Brushes.Green;
                     break;
                 case Key.Oem1:
-                    RDollar.Fill = Brushes.Green;
+                    Oem1.Fill = Brushes.Green;
                     break;
                 case Key.Enter when !Keyboard.IsKeyToggled(Key.NumLock):
                     REnter.Fill = Brushes.Green;
                     break;
                 case Key.Delete:
-                    RDel.Fill = Brushes.Green;
+                    Delete.Fill = Brushes.Green;
                     break;
                 case Key.End:
-                    REnd.Fill = Brushes.Green;
+                    End.Fill = Brushes.Green;
                     break;
                 case Key.PageDown:
-                    RPagedown.Fill = Brushes.Green;
+                    PageDown.Fill = Brushes.Green;
                     break;
                 case Key.NumPad7:
-                    R7.Fill = Brushes.Green;
+                    NumPad7.Fill = Brushes.Green;
                     break;
                 case Key.NumPad8:
-                    R8.Fill = Brushes.Green;
+                    NumPad8.Fill = Brushes.Green;
                     break;
                 case Key.NumPad9:
-                    R9.Fill = Brushes.Green;
+                    NumPad9.Fill = Brushes.Green;
                     break;
                 case Key.Add:
-                    RPlus.Fill = Brushes.Green;
+                    Add.Fill = Brushes.Green;
                     break;
                 case Key.CapsLock:
-                    RCapslock.Fill = Brushes.Green;
+                    CapsLock.Fill = Brushes.Green;
                     break;
                 case Key.Q:
-                    RQ.Fill = Brushes.Green;
+                    Q.Fill = Brushes.Green;
                     break;
                 case Key.S:
-                    RS.Fill = Brushes.Green;
+                    S.Fill = Brushes.Green;
                     break;
                 case Key.D:
-                    RD.Fill = Brushes.Green;
+                    D.Fill = Brushes.Green;
                     break;
                 case Key.F:
-                    RF.Fill = Brushes.Green;
+                    F.Fill = Brushes.Green;
                     break;
                 case Key.G:
-                    RG.Fill = Brushes.Green;
+                    G.Fill = Brushes.Green;
                     break;
                 case Key.H:
-                    RH.Fill = Brushes.Green;
+                    H.Fill = Brushes.Green;
                     break;
                 case Key.J:
-                    RJ.Fill = Brushes.Green;
+                    J.Fill = Brushes.Green;
                     break;
                 case Key.K:
-                    RK.Fill = Brushes.Green;
+                    K.Fill = Brushes.Green;
                     break;
                 case Key.L:
-                    RL.Fill = Brushes.Green;
+                    L.Fill = Brushes.Green;
                     break;
                 case Key.M:
-                    RM.Fill = Brushes.Green;
+                    M.Fill = Brushes.Green;
                     break;
                 case Key.Oem3:
-                    Rù.Fill = Brushes.Green;
+                    Oem3.Fill = Brushes.Green;
                     break;
                 case Key.Oem5:
-                    Rµ.Fill = Brushes.Green;
+                    Oem5.Fill = Brushes.Green;
                     break;
                 case Key.NumPad4:
-                    R4.Fill = Brushes.Green;
+                    NumPad4.Fill = Brushes.Green;
                     break;
                 case Key.NumPad5:
-                    R5.Fill = Brushes.Green;
+                    NumPad5.Fill = Brushes.Green;
                     break;
                 case Key.NumPad6:
-                    R6.Fill = Brushes.Green;
+                    NumPad6.Fill = Brushes.Green;
                     break;
                 case Key.LeftShift:
-                    RLeftshift.Fill = Brushes.Green;
+                    LeftShift.Fill = Brushes.Green;
                     break;
+                /*case Key.OemBackslash:
+                    OemBackslash.Fill = Brushes.Green;
+                    break;*/
                 case Key.W:
-                    RW.Fill = Brushes.Green;
+                    W.Fill = Brushes.Green;
                     break;
                 case Key.X:
-                    RX.Fill = Brushes.Green;
+                    X.Fill = Brushes.Green;
                     break;
                 case Key.C:
-                    RC.Fill = Brushes.Green;
+                    C.Fill = Brushes.Green;
                     break;
                 case Key.V:
-                    RV.Fill = Brushes.Green;
+                    V.Fill = Brushes.Green;
                     break;
                 case Key.B:
-                    RB.Fill = Brushes.Green;
+                    B.Fill = Brushes.Green;
                     break;
                 case Key.N:
-                    RN.Fill = Brushes.Green;
+                    N.Fill = Brushes.Green;
                     break;
                 case Key.OemComma:
-                    RQuestion.Fill = Brushes.Green;
+                    OemComma.Fill = Brushes.Green;
                     break;
                 case Key.OemPeriod:
-                    RPunt.Fill = Brushes.Green;
+                    OemPeriod.Fill = Brushes.Green;
                     break;
                 case Key.Oem2:
-                    RDubbelpunt.Fill = Brushes.Green;
+                    Oem2.Fill = Brushes.Green;
                     break;
                 case Key.OemPlus:
-                    Recual.Fill = Brushes.Green;
+                    OemPlus.Fill = Brushes.Green;
                     break;
                 case Key.RightShift:
-                    RRightshift.Fill = Brushes.Green;
+                    RightShift.Fill = Brushes.Green;
                     break;
                 case Key.Up:
-                    RArrowup.Fill = Brushes.Green;
+                    Up.Fill = Brushes.Green;
                     break;
                 case Key.NumPad1:
-                    R1.Fill = Brushes.Green;
+                    NumPad1.Fill = Brushes.Green;
                     break;
                 case Key.NumPad2:
-                    R2.Fill = Brushes.Green;
+                    NumPad2.Fill = Brushes.Green;
                     break;
                 case Key.NumPad3:
-                    R3.Fill = Brushes.Green;
+                    NumPad3.Fill = Brushes.Green;
                     break;
                 case Key.LeftCtrl:
-                    RLeftctrl.Fill = Brushes.Green;
+                    LeftCtrl.Fill = Brushes.Green;
                     break;
                 case Key.LWin:
-                    RWindows.Fill = Brushes.Green;
+                    LWin.Fill = Brushes.Green;
                     break;
                 case Key.LeftAlt:
-                    RAlt.Fill = Brushes.Green;
+                    LeftAlt.Fill = Brushes.Green;
                     break;
                 case Key.RightAlt:
-                    RAltgr.Fill = Brushes.Green;
+                    RightAlt.Fill = Brushes.Green;
                     break;
                 case Key.Space:
-                    RSpace.Fill = Brushes.Green;
+                    Space.Fill = Brushes.Green;
                     break;
                 //functie key kan niet getecteerd worden!!!!
                 case Key.Apps:
-                    RMenu.Fill = Brushes.Green;
+                    Apps.Fill = Brushes.Green;
                     break;
                 case Key.RightCtrl:
-                    Rrightctrl.Fill = Brushes.Green;
+                    RightCtrl.Fill = Brushes.Green;
                     break;
                 case Key.Left:
-                    RArrowleft.Fill = Brushes.Green;
+                    Left.Fill = Brushes.Green;
                     break;
                 case Key.Down:
-                    RArrowdown.Fill = Brushes.Green;
+                    Down.Fill = Brushes.Green;
                     break;
                 case Key.Right:
-                    RArrowright.Fill = Brushes.Green;
+                    Right.Fill = Brushes.Green;
                     break;
                 case Key.NumPad0:
-                    R0.Fill = Brushes.Green;
+                    NumPad0.Fill = Brushes.Green;
                     break;
                 case Key.Decimal:
-                    RNumpunt.Fill = Brushes.Green;
+                    Decimal.Fill = Brushes.Green;
                     break;
                 default:
                     break;
             }
+        }
+
+
+        private void Jsonsavebtn_Click(object sender, RoutedEventArgs e)
+        {
+            string jsonContent = jsonsavetextbox.Text;
+
+            string fileName = $"{jsonContent}.json";
+
+            string directoryPath = @"D:\Vives 1-2\OOP\Project Keyboard-Tester";
+            string filePath = System.IO.Path.Combine(directoryPath, fileName);
+
+            keychecker.SaveToJson(filePath);
+
+            MessageBox.Show($"De werkende toetsen zijn opgeslagen naar het bestand:\n{filePath}",
+                "Opslaan voltooid", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void jsonopenbtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Haal de bestandsnaam op uit jsonsearchtextbox
+            string fileName = jsonsearchtextbox.Text;
+
+            // Bepaal het volledige pad naar het JSON-bestand
+            string directoryPath = @"D:\Vives 1-2\OOP\Project Keyboard-Tester";
+            string filePath = System.IO.Path.Combine(directoryPath, fileName);
+
+            // Controleer of het bestand bestaat
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("Het opgegeven bestand bestaat niet.", "Bestand niet gevonden",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // Lees de inhoud van het JSON-bestand
+            string jsonContent = File.ReadAllText(filePath);
+
+            // Deserialiseer de JSON-inhoud naar een geschikt object
+            List<string> rectangleNames = JsonConvert.DeserializeObject<List<string>>(jsonContent);
+
+            // Itereer door de deserialiseerde objecten en zoek de overeenkomende rechthoeken
+            foreach (string rectangleName in rectangleNames)
+            {
+                // Zoek de rechthoek met de overeenkomende naam
+                Rectangle foundRectangle = (Rectangle)FindName(rectangleName);
+
+                // Markeer de gevonden rechthoeken
+                if (foundRectangle != null)
+                {
+                    foundRectangle.Fill = Brushes.Green;
+                }
+            }
+
+            MessageBox.Show("Rechthoeken gemarkeerd zoals gespecificeerd in het JSON-bestand.", "Voltooid",
+                MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

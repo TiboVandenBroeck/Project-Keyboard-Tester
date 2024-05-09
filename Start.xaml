@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Keyboard_Tester"
         mc:Ignorable="d"
-        Title="Start" Height="450" Width="800">
+        Title="Keyboard Select" Height="240" Width="240"
+        WindowStartupLocation = "CenterScreen">
     <Grid>
-        <Label Content="Keyboard Test programma" HorizontalAlignment="Left" Margin="94,77,0,0" VerticalAlignment="Top"/>
-        <Label Content="Kies je toetsenbord:" HorizontalAlignment="Left" Margin="112,108,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="112,139,0,0" VerticalAlignment="Top" Width="120" Name="toestenbordcombobox"/>
-        <Button Content="Start testen" HorizontalAlignment="Left" Margin="129,166,0,0" VerticalAlignment="Top" Width="87" Name="startbtn" Background="LightGreen" Click="startbtn_Click"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="340,134,0,0" VerticalAlignment="Top" Name="keyboardlbl"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="359,186,0,0" VerticalAlignment="Top" Name="kieslbl"/>
+        <Canvas>
+            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Name="toestenbordcombobox" Canvas.Left="27" Canvas.Top="100"/>
+            <Button Content="Start testen" HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Name="startbtn" Background="LightGreen" Click="startbtn_Click" Canvas.Left="27" Canvas.Top="164"/>
+            <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Center" Name="keyboardlbl" Canvas.Left="22" Canvas.Top="38"/>
+            <Label Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" Name="kieslbl" Canvas.Left="22" Canvas.Top="69"/>
+        </Canvas>
     </Grid>
 </Window>

@@ -20,7 +20,9 @@ namespace Project_Keyboard_Tester
     /// </summary>
     public partial class Start : Window
     {
-        public Start(string KeyboardLabelText, string ChooseLabelText)
+        private QWERTY qwertyWindow;
+        private AZERTY azertyWindow;
+        public Start(string KeyboardLabelText, string ChooseLabelText, QWERTY qwerty, AZERTY azerty)
         {
             InitializeComponent();
 
@@ -28,21 +30,36 @@ namespace Project_Keyboard_Tester
             toestenbordcombobox.ItemsSource = keyboards;
             keyboardlbl.Content = KeyboardLabelText;
             kieslbl.Content = ChooseLabelText;
+
+            qwertyWindow = qwerty;
+            azertyWindow = azerty;
         }
 
         private void startbtn_Click(object sender, RoutedEventArgs e)
         {
             if (toestenbordcombobox.SelectedItem.ToString() == "AZERTY")
             {
-                AZERTY azertywindow = new AZERTY();
-                this.Visibility = Visibility.Hidden;
-                azertywindow.Show();
+                if (azertyWindow != null)
+                {
+                    this.Visibility = Visibility.Hidden;
+                    azertyWindow.Show();
+                }
+                else
+                {
+                    MessageBox.Show("AZERTY-venster is niet correct geïnitialiseerd.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else if (toestenbordcombobox.SelectedItem.ToString() == "QWERTY")
             {
-                QWERTY qwertywindow = new QWERTY();
-                this.Visibility = Visibility.Hidden;
-                qwertywindow.Show();
+                if (qwertyWindow != null)
+                {
+                    this.Visibility = Visibility.Hidden;
+                    qwertyWindow.Show();
+                }
+                else
+                {
+                    MessageBox.Show("QWERTY-venster is niet correct geïnitialiseerd.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
             {

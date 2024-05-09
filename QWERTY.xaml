@@ -5,124 +5,125 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Keyboard_Tester"
         mc:Ignorable="d"
-        Title="QWERTY" Height="280" Width="800"
-        KeyDown="Window_KeyDown">
+        Title="QWERTY" Height="300" Width="1020"
+        KeyDown="Window_KeyDown"
+        WindowStartupLocation = "CenterScreen">
     <Grid>
-        <Canvas Height="250" Width="800">
+        <Canvas Height="250" Margin="10,10,72,24">
             <!--ESC-->
-            <Rectangle x:Name="RESC" Fill="LightGray" Width="25" Height="25" Canvas.Left="31" Canvas.Top="25">
+            <Rectangle x:Name="Escape" Fill="LightGray" Width="25" Height="25" Canvas.Left="31" Canvas.Top="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="ESC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,29,0,0"/>
             <!--F1-->
-            <Rectangle x:Name="RF1" Fill="LightGray" Margin="98,25,677,384" Width="25" Height="25">
+            <Rectangle x:Name="F1" Fill="LightGray" Margin="98,25,677,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,29,0,0"/>
             <!--F2-->
-            <Rectangle x:Name="RF2" Fill="LightGray" Margin="127,25,648,384" Width="25" Height="25">
+            <Rectangle x:Name="F2" Fill="LightGray" Margin="127,25,648,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="134,29,0,0"/>
             <!--F3-->
-            <Rectangle x:Name="RF3" Fill="LightGray" Margin="157,25,618,384" Width="25" Height="25">
+            <Rectangle x:Name="F3" Fill="LightGray" Margin="157,25,618,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="163,29,0,0"/>
             <!--F4-->
-            <Rectangle x:Name="RF4" Fill="LightGray" Margin="186,25,589,384" Width="25" Height="25">
+            <Rectangle x:Name="F4" Fill="LightGray" Margin="186,25,589,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,29,0,0"/>
             <!--F5-->
-            <Rectangle x:Name="RF5" Fill="LightGray" Margin="237,25,538,384" Width="25" Height="25">
+            <Rectangle x:Name="F5" Fill="LightGray" Margin="237,25,538,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,29,0,0"/>
             <!--F6-->
-            <Rectangle x:Name="RF6" Fill="LightGray" Margin="269,25,506,384" Width="25" Height="25">
+            <Rectangle x:Name="F6" Fill="LightGray" Margin="269,25,506,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,29,0,0"/>
             <!--F7-->
-            <Rectangle x:Name="RF7" Fill="LightGray" Margin="300,25,475,384" Width="25" Height="25">
+            <Rectangle x:Name="F7" Fill="LightGray" Margin="300,25,475,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306,29,0,0"/>
             <!--F8-->
-            <Rectangle x:Name="RF8" Fill="LightGray" Margin="331,25,444,384" Width="25" Height="25">
+            <Rectangle x:Name="F8" Fill="LightGray" Margin="331,25,444,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="337,29,0,0"/>
             <!--F9-->
-            <Rectangle x:Name="RF9" Fill="LightGray" Margin="384,25,391,384" Width="25" Height="25">
+            <Rectangle x:Name="F9" Fill="LightGray" Margin="384,25,391,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="390,29,0,0"/>
             <!--F10-->
-            <Rectangle x:Name="RF10" Fill="LightGray" Margin="416,25,359,384" Width="25" Height="25">
+            <Rectangle x:Name="F10" Fill="LightGray" Margin="416,25,359,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="419,29,0,0"/>
             <!--F11-->
-            <Rectangle x:Name="RF11" Fill="LightGray" Margin="447,25,328,384" Width="25" Height="25">
+            <Rectangle x:Name="F11" Fill="LightGray" Margin="447,25,328,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,29,0,0"/>
             <!--F12-->
-            <Rectangle x:Name="RF12" Fill="LightGray" Margin="478,25,297,384" Width="25" Height="25">
+            <Rectangle x:Name="F12" Fill="LightGray" Margin="478,25,297,384" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="481,29,0,0"/>
             <!--Print Screen-->
-            <Rectangle x:Name="RPrntscrn" Fill="LightGray" Margin="511,25,264,384" Height="25" Width="25">
+            <Rectangle x:Name="PrintScreen" Fill="LightGray" Margin="511,25,264,384" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Prnt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="513,29,0,0"/>
             <!--Scroll Lock-->
-            <Rectangle x:Name="RScrlllck" Fill="LightGray" Margin="538,25,237,384" Height="25" Width="25">
+            <Rectangle x:Name="Scroll" Fill="LightGray" Margin="538,25,237,384" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Scrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="541,29,0,0"/>
             <!--Pause-->
-            <Rectangle x:Name="RPause" Fill="LightGray" Margin="565,25,210,384" Height="25" Width="25">
+            <Rectangle x:Name="Pause" Fill="LightGray" Margin="565,25,210,384" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="568,32,0,0" FontSize="8"/>
             <!--Macht-->
-            <Rectangle x:Name="RMacht" Fill="LightGray" Margin="31,65,744,344" Width="25" Height="25">
+            <Rectangle x:Name="OemQuotes" Fill="LightGray" Margin="31,65,744,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -130,77 +131,77 @@
             <TextBlock Text="²" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,79,0,0"/>
             <TextBlock Text="³" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,70,0,0"/>
             <!--&-->
-            <Rectangle x:Name="Rone" Fill="LightGray" Margin="63,65,712,344" Width="25" Height="25">
+            <Rectangle x:Name="D1" Fill="LightGray" Margin="63,65,712,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,70,0,0"/>
             <!--é-->
-            <Rectangle x:Name="Rtwo" Fill="LightGray" Margin="96,65,679,344" Width="25" Height="25">
+            <Rectangle x:Name="D2" Fill="LightGray" Margin="96,65,679,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,70,0,0"/>
             <!--"-->
-            <Rectangle x:Name="Rthree" Fill="LightGray" Margin="127,65,648,344" Width="25" Height="25">
+            <Rectangle x:Name="D3" Fill="LightGray" Margin="127,65,648,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,70,0,0"/>
             <!--'-->
-            <Rectangle x:Name="Rfour" Fill="LightGray" Margin="158,65,617,344" Width="25" Height="25">
+            <Rectangle x:Name="D4" Fill="LightGray" Margin="158,65,617,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="167,70,0,0"/>
             <!--(-->
-            <Rectangle x:Name="Rfive" Fill="LightGray" Margin="190,65,584,344" Width="25" Height="25">
+            <Rectangle x:Name="D5" Fill="LightGray" Margin="190,65,584,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,70,0,0"/>
             <!--§-->
-            <Rectangle x:Name="Rsix" Fill="LightGray" Margin="224,65,551,344" Width="25" Height="25">
+            <Rectangle x:Name="D6" Fill="LightGray" Margin="224,65,551,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,70,0,0"/>
             <!--è-->
-            <Rectangle x:Name="Rseven" Fill="LightGray" Margin="256,65,519,344" Width="25" Height="25">
+            <Rectangle x:Name="D7" Fill="LightGray" Margin="256,65,519,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,70,0,0"/>
             <!--!-->
-            <Rectangle x:Name="Reight" Fill="LightGray" Margin="286,65,490,344" Width="25" Height="25">
+            <Rectangle x:Name="D8" Fill="LightGray" Margin="286,65,490,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="295,70,0,0"/>
             <!--ç-->
-            <Rectangle x:Name="Rnine" Fill="LightGray" Margin="314,65,461,344" Width="25" Height="25">
+            <Rectangle x:Name="D9" Fill="LightGray" Margin="314,65,461,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,70,0,0"/>
             <!--à-->
-            <Rectangle x:Name="Rzero" Fill="LightGray" Margin="344,65,431,344" Width="25" Height="25">
+            <Rectangle x:Name="D0" Fill="LightGray" Margin="344,65,431,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,70,0,0"/>
             <!--)-->
-            <Rectangle x:Name="RCelcius" Fill="LightGray" Width="25" Height="25" Canvas.Left="429" Canvas.Top="65" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="OemOpenBrackets" Fill="LightGray" Width="25" Height="25" Canvas.Left="429" Canvas.Top="65" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -208,7 +209,7 @@
             <TextBlock Text="|" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="430" Canvas.Top="64"/>
             <TextBlock Text="\" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="435" Canvas.Top="73"/>
             <!--_-->
-            <Rectangle x:Name="R_" Fill="LightGray" Width="25" Height="25" Canvas.Left="374" Canvas.Top="65" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="OemMinus" Fill="LightGray" Width="25" Height="25" Canvas.Left="374" Canvas.Top="65" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -216,140 +217,140 @@
             <TextBlock Text="-" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="377" Canvas.Top="74"/>
             <TextBlock Text="_" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="377" Canvas.Top="58"/>
             <!--backspace-->
-            <Rectangle x:Name="RBack" Fill="LightGray" Height="25" Canvas.Left="457" Canvas.Top="65" Width="46" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="Back" Fill="LightGray" Height="25" Canvas.Left="457" Canvas.Top="65" Width="46" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="BackSpace" HorizontalAlignment="Left" VerticalAlignment="Top" Height="17" Canvas.Left="459" Canvas.Top="71" Width="57" FontSize="9"/>
             <!--Insert-->
-            <Rectangle x:Name="RInsert" Fill="LightGray" Margin="511,65,264,344" Height="25" Width="25">
+            <Rectangle x:Name="Insert" Fill="LightGray" Margin="511,65,264,344" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Ins" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,70,0,0"/>
             <!--Home-->
-            <Rectangle x:Name="RHome" Fill="LightGray" Margin="539,65,236,344" Height="25" Width="25">
+            <Rectangle x:Name="Home" Fill="LightGray" Margin="539,65,236,344" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="541,72,0,0" FontSize="8"/>
             <!--Page Up-->
-            <Rectangle x:Name="RUp" Fill="LightGray" Margin="566,65,209,344" Width="25" Height="25">
+            <Rectangle x:Name="PageUp" Fill="LightGray" Margin="566,65,209,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Up" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="571,70,0,0"/>
             <!--Num Lock-->
-            <Rectangle x:Name="RNumlock" Fill="LightGray" Height="25" Width="25" Canvas.Left="628" Canvas.Top="65">
+            <Rectangle x:Name="NumLock" Fill="LightGray" Height="25" Width="25" Canvas.Left="628" Canvas.Top="65">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Num" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,70,0,0" FontSize="10"/>
             <!--/-->
-            <Rectangle x:Name="RDash" Fill="LightGray" Margin="658,65,117,344" Width="25" Height="25">
+            <Rectangle x:Name="Divide" Fill="LightGray" Margin="658,65,117,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="/" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,70,0,0"/>
             <!--*-->
-            <Rectangle x:Name="RMultipl" Fill="LightGray" Margin="688,65,87,344" Width="25" Height="25">
+            <Rectangle x:Name="Multiply" Fill="LightGray" Margin="688,65,87,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="698,70,0,0"/>
             <!--_-->
-            <Rectangle x:Name="RStreep" Fill="LightGray" Margin="716,65,59,344" Width="25" Height="25">
+            <Rectangle x:Name="Subtract" Fill="LightGray" Margin="716,65,59,344" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="728,70,0,0"/>
             <!--TAB-->
-            <Rectangle x:Name="RTab" Fill="LightGray" Width="58" Height="25" Canvas.Left="32" Canvas.Top="95">
+            <Rectangle x:Name="Tab" Fill="LightGray" Width="58" Height="25" Canvas.Left="32" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="TAB" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="52" Canvas.Top="99"/>
             <!--A-->
-            <Rectangle x:Name="RA" Fill="LightGray" Width="25" Height="25" Canvas.Top="126" Canvas.Left="105">
+            <Rectangle x:Name="A" Fill="LightGray" Width="25" Height="25" Canvas.Top="126" Canvas.Left="105">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="A" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="114" Canvas.Top="130"/>
             <!--Z-->
-            <Rectangle x:Name="RZ" Fill="LightGray" Width="25" Height="25" Canvas.Left="124" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="Z" Fill="LightGray" Width="25" Height="25" Canvas.Left="124" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Z" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="134" Canvas.Top="161"/>
             <!--E-->
-            <Rectangle x:Name="RE" Fill="LightGray" Width="25" Height="25" Canvas.Left="162" Canvas.Top="95">
+            <Rectangle x:Name="E" Fill="LightGray" Width="25" Height="25" Canvas.Left="162" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="E" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="171" Canvas.Top="99"/>
             <!--R-->
-            <Rectangle x:Name="RR" Fill="LightGray" Width="25" Height="25" Canvas.Left="192" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="R" Fill="LightGray" Width="25" Height="25" Canvas.Left="192" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="R" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="201" Canvas.Top="99"/>
             <!--T-->
-            <Rectangle x:Name="RT" Fill="LightGray" Width="25" Height="25" Canvas.Left="223" Canvas.Top="95">
+            <Rectangle x:Name="T" Fill="LightGray" Width="25" Height="25" Canvas.Left="223" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="T" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="233" Canvas.Top="99"/>
             <!--Y-->
-            <Rectangle x:Name="RY" Fill="LightGray" Width="25" Height="25" Canvas.Left="251" Canvas.Top="95">
+            <Rectangle x:Name="Y" Fill="LightGray" Width="25" Height="25" Canvas.Left="251" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Y" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="260" Canvas.Top="99"/>
             <!--U-->
-            <Rectangle x:Name="RU" Fill="LightGray" Width="25" Height="25" Canvas.Left="280" Canvas.Top="95">
+            <Rectangle x:Name="U" Fill="LightGray" Width="25" Height="25" Canvas.Left="280" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="U" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="288" Canvas.Top="99"/>
             <!--I-->
-            <Rectangle x:Name="RI" Fill="LightGray" Width="25" Height="25" Canvas.Left="310" Canvas.Top="95">
+            <Rectangle x:Name="I" Fill="LightGray" Width="25" Height="25" Canvas.Left="310" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="I" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="321" Canvas.Top="99"/>
             <!--O-->
-            <Rectangle x:Name="RO" Fill="LightGray" Width="25" Height="25" Canvas.Left="340" Canvas.Top="95">
+            <Rectangle x:Name="O" Fill="LightGray" Width="25" Height="25" Canvas.Left="340" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="O" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="349" Canvas.Top="99"/>
             <!--P-->
-            <Rectangle x:Name="RP" Fill="LightGray" Width="25" Height="25" Canvas.Left="371" Canvas.Top="95">
+            <Rectangle x:Name="P" Fill="LightGray" Width="25" Height="25" Canvas.Left="371" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="P" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="380" Canvas.Top="99"/>
             <!--^-->
-            <Rectangle x:Name="RPiramid" Fill="LightGray" Width="25" Height="25" Canvas.Left="401" Canvas.Top="95">
+            <Rectangle x:Name="OemCloseBrackets" Fill="LightGray" Width="25" Height="25" Canvas.Left="401" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -366,7 +367,7 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
             <!--$-->
-            <Rectangle x:Name="RDollar" Fill="LightGray" Width="25" Height="25" Canvas.Left="429" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="Oem1" Fill="LightGray" Width="25" Height="25" Canvas.Left="429" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -374,140 +375,140 @@
             <TextBlock Text="}" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="431" Canvas.Top="94"/>
             <TextBlock Text="]" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="438" Canvas.Top="103"/>
             <!--Enter-->
-            <Rectangle x:Name="REnter" Fill="LightGray" Height="57" Canvas.Left="457" Canvas.Top="95" Width="46" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="Enter" Fill="LightGray" Height="57" Canvas.Left="457" Canvas.Top="95" Width="46" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="466" Canvas.Top="101"/>
             <!--Delete-->
-            <Rectangle x:Name="RDel" Fill="LightGray" Margin="511,95,264,314" Width="25" Height="25">
+            <Rectangle x:Name="Delete" Fill="LightGray" Margin="511,95,264,314" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Del" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="515,99,0,0"/>
             <!--End-->
-            <Rectangle x:Name="REnd" Fill="LightGray" Margin="539,95,236,314" Width="25" Height="25">
+            <Rectangle x:Name="End" Fill="LightGray" Margin="539,95,236,314" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="End" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="542,99,0,0"/>
             <!--Page Down-->
-            <Rectangle x:Name="RPagedown" Fill="LightGray" Margin="566,95,209,314" Height="25" Width="25">
+            <Rectangle x:Name="PageDown" Fill="LightGray" Margin="566,95,209,314" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Down" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="568,102,0,0" FontSize="8"/>
             <!--7-->
-            <Rectangle x:Name="R7" Fill="LightGray" Margin="628,94,147,315" Width="25" Height="25">
+            <Rectangle x:Name="NumPad7" Fill="LightGray" Margin="628,94,147,315" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,99,0,0"/>
             <!--8-->
-            <Rectangle x:Name="R8" Fill="LightGray" Margin="658,94,117,315" Width="25" Height="25">
+            <Rectangle x:Name="NumPad8" Fill="LightGray" Margin="658,94,117,315" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="667,99,0,0"/>
             <!--9-->
-            <Rectangle x:Name="R9" Fill="LightGray" Margin="688,94,87,315" Width="25" Height="25">
+            <Rectangle x:Name="NumPad9" Fill="LightGray" Margin="688,94,87,315" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="697,99,0,0"/>
             <!--+-->
-            <Rectangle x:Name="RPlus" Fill="LightGray" Width="25" Height="52" Canvas.Left="717" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="Add" Fill="LightGray" Width="25" Height="52" Canvas.Left="717" Canvas.Top="95" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="725,100,0,0"/>
             <!--Caps Lock-->
-            <Rectangle x:Name="RCapslock" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="127" Width="61" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="CapsLock" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="127" Width="61" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Caps" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="50" Canvas.Top="131"/>
             <!--Q-->
-            <Rectangle x:Name="RQ" Fill="LightGray" Width="25" Height="25" Canvas.Left="98" Canvas.Top="95">
+            <Rectangle x:Name="Q" Fill="LightGray" Width="25" Height="25" Canvas.Left="98" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Q" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="106" Canvas.Top="99"/>
             <!--S-->
-            <Rectangle x:Name="RS" Fill="LightGray" Width="25" Height="25" Canvas.Left="136" Canvas.Top="126">
+            <Rectangle x:Name="S" Fill="LightGray" Width="25" Height="25" Canvas.Left="136" Canvas.Top="126">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="S" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="146" Canvas.Top="130"/>
             <!--D-->
-            <Rectangle x:Name="RD" Fill="LightGray" Width="25" Height="25" Canvas.Left="166" Canvas.Top="126">
+            <Rectangle x:Name="D" Fill="LightGray" Width="25" Height="25" Canvas.Left="166" Canvas.Top="126">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="D" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="175" Canvas.Top="131"/>
             <!--F-->
-            <Rectangle x:Name="RF" Fill="LightGray" Width="26" Height="25" Canvas.Left="196" Canvas.Top="127">
+            <Rectangle x:Name="F" Fill="LightGray" Width="26" Height="25" Canvas.Left="196" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="F" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="206" Canvas.Top="132"/>
             <!--G-->
-            <Rectangle x:Name="RG" Fill="LightGray" Width="25" Height="25" Canvas.Left="230" Canvas.Top="127">
+            <Rectangle x:Name="G" Fill="LightGray" Width="25" Height="25" Canvas.Left="230" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="G" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="238" Canvas.Top="131"/>
             <!--H-->
-            <Rectangle x:Name="RH" Fill="LightGray" Width="25" Height="25" Canvas.Left="260" Canvas.Top="127">
+            <Rectangle x:Name="H" Fill="LightGray" Width="25" Height="25" Canvas.Left="260" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="H" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="269" Canvas.Top="132"/>
             <!--J-->
-            <Rectangle x:Name="RJ" Fill="LightGray" Width="25" Height="25" Canvas.Left="290" Canvas.Top="127" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Rectangle x:Name="J" Fill="LightGray" Width="25" Height="25" Canvas.Left="290" Canvas.Top="127" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="J" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="301" Canvas.Top="132"/>
             <!--K-->
-            <Rectangle x:Name="RK" Fill="LightGray" Width="25" Height="25" Canvas.Left="320" Canvas.Top="127">
+            <Rectangle x:Name="K" Fill="LightGray" Width="25" Height="25" Canvas.Left="320" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="K" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="329" Canvas.Top="132"/>
             <!--L-->
-            <Rectangle x:Name="RL" Fill="LightGray" Width="26" Height="25" Canvas.Left="352" Canvas.Top="127">
+            <Rectangle x:Name="L" Fill="LightGray" Width="26" Height="25" Canvas.Left="352" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="L" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="362" Canvas.Top="131"/>
             <!--M-->
-            <Rectangle x:Name="RM" Fill="LightGray" Width="25" Height="25" Canvas.Left="304" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="M" Fill="LightGray" Width="25" Height="25" Canvas.Left="304" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="M" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="311" Canvas.Top="162"/>
             <!--ù-->
-            <Rectangle x:Name="Rù" Fill="LightGray" Width="25" Height="25" Canvas.Left="386" Canvas.Top="127">
+            <Rectangle x:Name="Oem3" Fill="LightGray" Width="25" Height="25" Canvas.Left="386" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -515,84 +516,84 @@
             <TextBlock Text=";" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="390" Canvas.Top="136"/>
             <TextBlock Text=":" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="390" Canvas.Top="126"/>
             <!--µ-->
-            <Rectangle x:Name="Rµ" Fill="LightGray" Width="25" Height="25" Canvas.Left="415" Canvas.Top="127">
+            <Rectangle x:Name="Oem5" Fill="LightGray" Width="25" Height="25" Canvas.Left="415" Canvas.Top="127">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="'" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="419" Canvas.Top="136"/>
             <!--4-->
-            <Rectangle x:Name="R4" Fill="LightGray" Margin="628,122,146,287" Width="25" Height="25">
+            <Rectangle x:Name="NumPad4" Fill="LightGray" Margin="628,122,146,287" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,127,0,0"/>
             <!--5-->
-            <Rectangle x:Name="R5" Fill="LightGray" Margin="658,122,117,287" Width="25" Height="25">
+            <Rectangle x:Name="NumPad5" Fill="LightGray" Margin="658,122,117,287" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="668,127,0,0"/>
             <!--6-->
-            <Rectangle x:Name="R6" Fill="LightGray" Margin="688,122,86,287" Width="25" Height="25">
+            <Rectangle x:Name="NumPad6" Fill="LightGray" Margin="688,122,86,287" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="698,127,0,0"/>
             <!--LeftShift-->
-            <Rectangle x:Name="RLeftshift" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="157" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="LeftShift" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="157" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="64" Canvas.Top="161"/>
             <!--W-->
-            <Rectangle x:Name="RW" Fill="LightGray" Height="25" Width="25" Canvas.Left="128" Canvas.Top="95">
+            <Rectangle x:Name="W" Fill="LightGray" Height="25" Width="25" Canvas.Left="128" Canvas.Top="95">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="W" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="135" Canvas.Top="99"/>
             <!--X-->
-            <Rectangle x:Name="RX" Fill="LightGray" Height="25" Width="25" Canvas.Left="152" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="X" Fill="LightGray" Height="25" Width="25" Canvas.Left="152" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="161" Canvas.Top="162"/>
             <!--C-->
-            <Rectangle x:Name="RC" Fill="LightGray" Height="25" Width="25" Canvas.Left="182" Canvas.Top="157">
+            <Rectangle x:Name="C" Fill="LightGray" Height="25" Width="25" Canvas.Left="182" Canvas.Top="157">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="C" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="191" Canvas.Top="161"/>
             <!--V-->
-            <Rectangle x:Name="RV" Fill="LightGray" Height="25" Width="24" Canvas.Left="212" Canvas.Top="157">
+            <Rectangle x:Name="V" Fill="LightGray" Height="25" Width="24" Canvas.Left="212" Canvas.Top="157">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="V" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="220" Canvas.Top="162"/>
             <!--B-->
-            <Rectangle x:Name="RB" Fill="LightGray" Height="25" Width="25" Canvas.Left="243" Canvas.Top="157">
+            <Rectangle x:Name="B" Fill="LightGray" Height="25" Width="25" Canvas.Left="243" Canvas.Top="157">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="B" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="252" Canvas.Top="161"/>
             <!--N-->
-            <Rectangle x:Name="RN" Fill="LightGray" Height="25" Width="24" Canvas.Left="274" Canvas.Top="157">
+            <Rectangle x:Name="N" Fill="LightGray" Height="25" Width="24" Canvas.Left="274" Canvas.Top="157">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="N" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="282" Canvas.Top="162"/>
             <!--,-->
-            <Rectangle x:Name="RQuestion" Fill="LightGray" Height="25" Width="25" Canvas.Left="336" Canvas.Top="157" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="OemComma" Fill="LightGray" Height="25" Width="25" Canvas.Left="336" Canvas.Top="157" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -609,7 +610,7 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
             <!--;-->
-            <Rectangle x:Name="RPunt" Fill="LightGray" Height="25" Width="25" Canvas.Left="366" Canvas.Top="157">
+            <Rectangle x:Name="OemPeriod" Fill="LightGray" Height="25" Width="25" Canvas.Left="366" Canvas.Top="157">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -617,7 +618,7 @@
             <TextBlock Text="." HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="368" Canvas.Top="164"/>
             <TextBlock Text=">" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="368" Canvas.Top="155"/>
             <!--:-->
-            <Rectangle x:Name="RDubbelpunt" Fill="LightGray" Height="25" Width="25" Canvas.Left="397" Canvas.Top="157">
+            <Rectangle x:Name="Oem2" Fill="LightGray" Height="25" Width="25" Canvas.Left="397" Canvas.Top="157">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -625,7 +626,7 @@
             <TextBlock Text="?" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="400" Canvas.Top="155"/>
             <TextBlock Text="/" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="401" Canvas.Top="165"/>
             <!--=-->
-            <Rectangle x:Name="Recual" Fill="LightGray" Height="25" Width="25" Canvas.Left="402" Canvas.Top="65" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="OemPlus" Fill="LightGray" Height="25" Width="25" Canvas.Left="402" Canvas.Top="65" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -633,14 +634,14 @@
             <TextBlock Text="=" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="406" Canvas.Top="75"/>
             <TextBlock Text="+" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="406" Canvas.Top="64"/>
             <!--RightShift-->
-            <Rectangle x:Name="RRightshift" Fill="LightGray" Height="25" Canvas.Left="426" Canvas.Top="157" Width="77" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle x:Name="RightShift" Fill="LightGray" Height="25" Canvas.Left="426" Canvas.Top="157" Width="77" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="453" Canvas.Top="162"/>
             <!--ArrowUp-->
-            <Rectangle x:Name="RArrowup" Fill="LightGray" Margin="540,161,236,248" Width="25" Height="25">
+            <Rectangle x:Name="Up" Fill="LightGray" Margin="540,161,236,248" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -656,63 +657,63 @@
                 </Image.RenderTransform>
             </Image>
             <!--1-->
-            <Rectangle x:Name="R1" Fill="LightGray" Margin="629,152,146,257" Width="25" Height="25">
+            <Rectangle x:Name="NumPad1" Fill="LightGray" Margin="629,152,146,257" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="638,157,0,0"/>
             <!--2-->
-            <Rectangle x:Name="R2" Fill="LightGray" Margin="658,152,117,257" Width="25" Height="25">
+            <Rectangle x:Name="NumPad2" Fill="LightGray" Margin="658,152,117,257" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="667,157,0,0"/>
             <!--3-->
-            <Rectangle x:Name="R3" Fill="LightGray" Margin="689,152,86,257" Width="25" Height="25">
+            <Rectangle x:Name="NumPad3" Fill="LightGray" Margin="689,152,86,257" Width="25" Height="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="699,157,0,0"/>
             <!--NumEnter-->
-            <Rectangle x:Name="RNumEnter" Fill="LightGray" Width="25" Height="61" Canvas.Left="717" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Rectangle x:Name="REnter" Fill="LightGray" Width="25" Height="61" Canvas.Left="717" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="718,157,0,0" FontSize="10"/>
             <!--LeftCtrl-->
-            <Rectangle x:Name="RLeftctrl" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="187" Width="37">
+            <Rectangle x:Name="LeftCtrl" Fill="LightGray" Height="25" Canvas.Left="32" Canvas.Top="187" Width="37">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Ctrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,192,0,0"/>
             <!--Windows-->
-            <Rectangle x:Name="RWindows" Fill="LightGray" Margin="74,187,701,222" Height="25" Width="25">
+            <Rectangle x:Name="LWin" Fill="LightGray" Margin="74,187,701,222" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <Image Source="windows.png" Height="17" Canvas.Left="78" Canvas.Top="191" Width="18"/>
             <!--Alt-->
-            <Rectangle x:Name="RAlt" Fill="LightGray" Margin="104,187,671,222" Height="25" Width="25">
+            <Rectangle x:Name="LeftAlt" Fill="LightGray" Margin="104,187,671,222" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Alt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,192,0,0"/>
             <!--Space-->
-            <Rectangle x:Name="RSpace" Fill="LightGray" Height="25" Canvas.Left="134" Canvas.Top="187" Width="179">
+            <Rectangle x:Name="Space" Fill="LightGray" Height="25" Canvas.Left="134" Canvas.Top="187" Width="179">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Space" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,192,0,0"/>
             <!--Alt gr-->
-            <Rectangle x:Name="RAltgr" Fill="LightGray" Height="25" Canvas.Left="318" Canvas.Top="187" Width="40">
+            <Rectangle x:Name="RightAlt" Fill="LightGray" Height="25" Canvas.Left="318" Canvas.Top="187" Width="40">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -726,28 +727,28 @@
             </Rectangle>
             <TextBlock Text="Fn" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="374" Canvas.Top="192"/>
             <!--Menu-->
-            <Rectangle x:Name="RMenu" Fill="LightGray" Height="25" Canvas.Left="400" Canvas.Top="187" Width="52">
+            <Rectangle x:Name="Apps" Fill="LightGray" Height="25" Canvas.Left="400" Canvas.Top="187" Width="52">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <Image Source="menu.png" Height="27" Canvas.Left="411" Canvas.Top="187" Width="30" />
             <!--RightCtrl-->
-            <Rectangle x:Name="Rrightctrl" Fill="LightGray" Height="25" Canvas.Left="457" Canvas.Top="187" Width="46">
+            <Rectangle x:Name="RightCtrl" Fill="LightGray" Height="25" Canvas.Left="457" Canvas.Top="187" Width="46">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="Ctrl" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="470,191,0,0"/>
             <!--ArrowLeft-->
-            <Rectangle x:Name="RArrowleft" Fill="LightGray" Margin="513,188,262,221" Height="25" Width="25">
+            <Rectangle x:Name="Left" Fill="LightGray" Margin="513,188,262,221" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <Image Source="arrow.png" Height="34" Canvas.Left="514" Canvas.Top="184" Width="23" />
             <!--ArrowDown-->
-            <Rectangle x:Name="RArrowdown" Fill="LightGray" Margin="540,188,235,221" Height="25" Width="25">
+            <Rectangle x:Name="Down" Fill="LightGray" Margin="540,188,235,221" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -763,7 +764,7 @@
                 </Image.RenderTransform>
             </Image>
             <!--ArrowRight-->
-            <Rectangle x:Name="RArrowright" Fill="LightGray" Margin="567,188,208,221" Height="25" Width="25">
+            <Rectangle x:Name="Right" Fill="LightGray" Margin="567,188,208,221" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
@@ -779,19 +780,34 @@
                 </Image.RenderTransform>
             </Image>
             <!--0-->
-            <Rectangle x:Name="R0" Fill="LightGray" Height="25" Canvas.Left="628" Canvas.Top="188" Width="56">
+            <Rectangle x:Name="NumPad0" Fill="LightGray" Height="25" Canvas.Left="628" Canvas.Top="188" Width="56">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="652,193,0,0"/>
             <!--Numpunt-->
-            <Rectangle x:Name="RNumpunt" Fill="LightGray" Margin="689,188,86,221" Height="25" Width="25">
+            <Rectangle x:Name="Decimal" Fill="LightGray" Margin="689,188,86,221" Height="25" Width="25">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
             </Rectangle>
             <TextBlock Text="." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="700,192,0,0"/>
+            <!--labels-->
+            <Label Content="Label" Canvas.Left="772" Canvas.Top="21" Name="greenlbl" Foreground="Green"/>
+            <Label Content="Label" Canvas.Left="772" Canvas.Top="47" Name="grijslbl" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray"/>
+            <!--Json-->
+            <Button Content="" HorizontalAlignment="Center" 
+                VerticalAlignment="Top" Name="Jsonsavebtn" Click="Jsonsavebtn_Click" Canvas.Left="772" Canvas.Top="133" Focusable="False"/>
+
+            <TextBox  Canvas.Left="772" TextWrapping="Wrap" Text="" Canvas.Top="93" Width="155" Name="jsonsavetextbox" 
+                HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" Background="#F0F0F0" IsTabStop="False"/>
+
+            <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155" Canvas.Left="772" 
+                Canvas.Top="168" Name="jsonsearchtextbox" Height="38" IsTabStop="False" Background="#F0F0F0"/>
+
+            <Button Content="" Canvas.Left="772" Canvas.Top="211" HorizontalAlignment="Center" 
+                VerticalAlignment="Top" Name="jsonopenbtn" Click="jsonopenbtn_Click" Focusable="False"/>
         </Canvas>
     </Grid>
 </Window>

@@ -17,5 +17,35 @@ namespace Project_Keyboard_Tester
         {
             return "Choose Keyboard Type";
         }
+
+        public virtual string GreenMessage()
+        {
+            return "Green = Pressed Succesfully";
+        }
+
+        public virtual string GrayMessage()
+        {
+            return "Gray = Not Pressed / Unsuccessful";
+        }
+
+        public virtual string JsonSaveTxtMessage()
+        {
+            return "Put the name you want to give the file here";
+        }
+
+        public virtual string JsonSearchTxtMessage()
+        {
+            return "Put the name of youre json file here";
+        }
+
+        public virtual string JsonSaveBtnTxtMessage()
+        {
+            return "Save to Json";
+        }
+
+        public virtual string JsonSearchBtnTxtMessage()
+        {
+            return "Use existing file";
+        }
     }
 }

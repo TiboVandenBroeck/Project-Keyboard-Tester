@@ -24,14 +24,21 @@ namespace Project_Keyboard_Tester
             InitializeComponent();
         }
 
-
         private void NederlandsButton_Click(object sender, EventArgs e)
         {
             Nederlands nederlands = new Nederlands();
             string headerMessage = nederlands.HeaderMessage();
             string chooseMessage = nederlands.ChooseMessage();
+            string greenMessage = nederlands.GreenMessage();
+            string grayMessage = nederlands.GrayMessage();
+            string jsonsaveMessage = nederlands.JsonSaveTxtMessage();
+            string jsonsearchMessage = nederlands.JsonSearchTxtMessage();
+            string jsonsavebtnMessage = nederlands.JsonSaveBtnTxtMessage();
+            string jsonsearchbtnMessage = nederlands.JsonSearchBtnTxtMessage();
 
-            Start start = new Start(headerMessage, chooseMessage);
+            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
+            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty , azerty);
             start.Show();
             this.Hide();
         }
@@ -41,8 +48,16 @@ namespace Project_Keyboard_Tester
             Frans frans = new Frans();
             string headerMessage = frans.HeaderMessage();
             string chooseMessage = frans.ChooseMessage();
+            string greenMessage = frans.GreenMessage();
+            string grayMessage = frans.GrayMessage();
+            string jsonsaveMessage = frans.JsonSaveTxtMessage();
+            string jsonsearchMessage = frans.JsonSearchTxtMessage();
+            string jsonsavebtnMessage = frans.JsonSaveBtnTxtMessage();
+            string jsonsearchbtnMessage = frans.JsonSearchBtnTxtMessage();
 
-            Start start = new Start(headerMessage, chooseMessage);
+            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
+            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty);
             start.Show();
             this.Hide();
         }
@@ -52,8 +67,16 @@ namespace Project_Keyboard_Tester
             Spaans spaans = new Spaans();
             string headerMessage = spaans.HeaderMessage();
             string chooseMessage = spaans.ChooseMessage();
+            string greenMessage = spaans.GreenMessage();
+            string grayMessage = spaans.GrayMessage();
+            string jsonsaveMessage = spaans.JsonSaveTxtMessage();
+            string jsonsearchMessage = spaans.JsonSearchTxtMessage();
+            string jsonsavebtnMessage = spaans.JsonSaveBtnTxtMessage();
+            string jsonsearchbtnMessage = spaans.JsonSearchBtnTxtMessage();
 
-            Start start = new Start(headerMessage, chooseMessage);
+            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
+            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty);
             start.Show();
             this.Hide();
         }
