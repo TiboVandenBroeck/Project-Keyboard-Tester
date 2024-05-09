@@ -20,26 +20,18 @@ namespace Project_Keyboard_Tester
     /// </summary>
     public partial class Start : Window
     {
-        public Start()
+        public Start(string KeyboardLabelText, string ChooseLabelText)
         {
             InitializeComponent();
 
-            List<string> talen = new List<string> { "Nederlands", "Frans", "Spaans" };
-            taalcombobox.ItemsSource = talen;
-
             List<string> keyboards = new List<string> { "AZERTY", "QWERTY" };
             toestenbordcombobox.ItemsSource = keyboards;
+            keyboardlbl.Content = KeyboardLabelText;
+            kieslbl.Content = ChooseLabelText;
         }
 
         private void startbtn_Click(object sender, RoutedEventArgs e)
         {
-            if (taalcombobox.SelectedItem == null || toestenbordcombobox.SelectedItem == null)
-            {
-                MessageBox.Show("Selecteer alstublieft een taal en een toetsenbord.", "Fout", 
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
             if (toestenbordcombobox.SelectedItem.ToString() == "AZERTY")
             {
                 AZERTY azertywindow = new AZERTY();
@@ -58,12 +50,7 @@ namespace Project_Keyboard_Tester
                 return;
             }
 
-            
-
             this.Close();
-
-            
-
         }
     }
 }

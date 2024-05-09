@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Start" Height="450" Width="800">
     <Grid>
-        <Label Content="Keyboard Test programma" HorizontalAlignment="Left" Margin="66,33,0,0" VerticalAlignment="Top"/>
-        <Label Content="Kies je taal:" HorizontalAlignment="Left" Margin="66,62,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="141,66,0,0" VerticalAlignment="Top" Width="120" Name="taalcombobox"/>
-        <Label Content="Kies je toetsenbord:" HorizontalAlignment="Left" Margin="66,93,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="186,95,0,0" VerticalAlignment="Top" Width="120" Name="toestenbordcombobox"/>
-        <Button Content="Start testen" HorizontalAlignment="Left" Margin="129,138,0,0" VerticalAlignment="Top" Width="87" Name="startbtn" Background="LightGreen" Click="startbtn_Click"/>
+        <Label Content="Keyboard Test programma" HorizontalAlignment="Left" Margin="94,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kies je toetsenbord:" HorizontalAlignment="Left" Margin="112,108,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="112,139,0,0" VerticalAlignment="Top" Width="120" Name="toestenbordcombobox"/>
+        <Button Content="Start testen" HorizontalAlignment="Left" Margin="129,166,0,0" VerticalAlignment="Top" Width="87" Name="startbtn" Background="LightGreen" Click="startbtn_Click"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="340,134,0,0" VerticalAlignment="Top" Name="keyboardlbl"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="359,186,0,0" VerticalAlignment="Top" Name="kieslbl"/>
     </Grid>
 </Window>

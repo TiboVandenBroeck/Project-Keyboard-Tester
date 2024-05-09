@@ -8,5 +8,13 @@ namespace Project_Keyboard_Tester
 {
     internal class Spaans : Talen
     {
+        public override string HeaderMessage()
+        {
+            return "Programa de prueba de teclado";
+        }
+        public override string ChooseMessage()
+        {
+            return "Elige un tipo de teclado";
+        }
     }
 }

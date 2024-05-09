@@ -673,7 +673,7 @@
             </Rectangle>
             <TextBlock Text="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="699,157,0,0"/>
             <!--NumEnter-->
-            <Rectangle x:Name="RNumEnter" Fill="LightGray" Width="25" Height="60" Canvas.Left="717" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle x:Name="RNumEnter" Fill="LightGray" Width="25" Height="61" Canvas.Left="717" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Rectangle.Triggers>
                     <EventTrigger RoutedEvent="KeyDown"></EventTrigger>
                 </Rectangle.Triggers>
