@@ -87,8 +87,13 @@ namespace Project_Keyboard_Tester
                 case Key.F9:
                     F9.Fill = Brushes.Green;
                     break;
-                case Key.F10:
-                    F10.Fill = Brushes.Green;
+                case Key.System:
+                    if (e.SystemKey == Key.F10)
+                    {
+                        F10.Fill = Brushes.Green;
+                        break;
+                        e.Handled = true;
+                    }
                     break;
                 case Key.F11:
                     F11.Fill = Brushes.Green;
