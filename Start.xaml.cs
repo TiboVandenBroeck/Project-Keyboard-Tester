@@ -22,7 +22,7 @@ namespace Project_Keyboard_Tester
     {
         private QWERTY qwertyWindow;
         private AZERTY azertyWindow;
-        public Start(string KeyboardLabelText, string ChooseLabelText, QWERTY qwerty, AZERTY azerty)
+        public Start(string KeyboardLabelText, string ChooseLabelText, QWERTY qwerty, AZERTY azerty, string StartTestingText)
         {
             InitializeComponent();
 
@@ -30,6 +30,7 @@ namespace Project_Keyboard_Tester
             toestenbordcombobox.ItemsSource = keyboards;
             keyboardlbl.Content = KeyboardLabelText;
             kieslbl.Content = ChooseLabelText;
+            startbtn.Content = StartTestingText;
 
             qwertyWindow = qwerty;
             azertyWindow = azerty;

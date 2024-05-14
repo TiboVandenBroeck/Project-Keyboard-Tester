@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Project_Keyboard_Tester
 {
@@ -46,6 +47,38 @@ namespace Project_Keyboard_Tester
         public virtual string JsonSearchBtnTxtMessage()
         {
             return "Use existing file";
+        }
+
+        public virtual string StartTestingBtnTxtMessage()
+        {
+            return "Start testing";
+        }
+
+        public virtual string OpslaanMessage()
+        {
+            return "Saved Succesfully";
+        }
+
+        public virtual string VoltooidMessage()
+        {
+            return "Saved!";
+        }
+
+        public virtual string FileDoesntExistMessage()
+        {
+            return "The given file does not exist!";
+        }
+        public virtual string FileNotFoundMesssage()
+        {
+            return "File Not Found";
+        }
+        public virtual string RectanglesMarkedMessage()
+        {
+            return "Rectangles marked as indicated in the JSON file.";
+        }
+        public virtual string CompletedMessage()
+        {
+            return "Completed!";
         }
     }
 }

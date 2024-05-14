@@ -43,5 +43,34 @@ namespace Project_Keyboard_Tester
         {
             return "Usar archivo existente";
         }
+
+        public override string StartTestingBtnTxtMessage()
+        {
+            return "Empezar a probar";
+        }
+        public override string OpslaanMessage()
+        {
+            return "Guardado exitosamente en:";
+        }
+        public override string VoltooidMessage()
+        {
+            return "Almacenado!";
+        }
+        public override string FileDoesntExistMessage()
+        {
+            return "¡El archivo especificado no existe!";
+        }
+        public override string FileNotFoundMesssage()
+        {
+            return "Archivo no encontrado";
+        }
+        public override string RectanglesMarkedMessage()
+        {
+            return "Rectángulos marcados como se indica en el archivo JSON.";
+        }
+        public override string CompletedMessage()
+        {
+            return "¡Terminado!";
+        }
     }
 }

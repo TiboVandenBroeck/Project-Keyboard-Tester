@@ -27,7 +27,16 @@ namespace Project_Keyboard_Tester
     {
         private Keychecker keychecker;
 
-        public QWERTY(string GreenLabelText, string GrayLabelText, string JsonSaveText, string JsonSearchText, string JsonSaveBtnText, string JsonSearchBtnText)
+        private string succesVolOpgeslaanText;
+        private string voltooid;
+        private string filedoesnexist;
+        private string filenotfound;
+        private string rectanglemarked;
+        private string completed;
+
+        public QWERTY(string GreenLabelText, string GrayLabelText, string JsonSaveText, string JsonSearchText, 
+            string JsonSaveBtnText, string JsonSearchBtnText, string SuccesVolOpgeslaanText, string Voltooid,
+            string FileDoesntExistText, string FileNotFoundText, string RectangleMarkedText, string Completed)
         {
             InitializeComponent();
 
@@ -39,6 +48,13 @@ namespace Project_Keyboard_Tester
             jsonopenbtn.Content = JsonSearchBtnText;
 
             keychecker = new Keychecker();
+
+            this.succesVolOpgeslaanText = SuccesVolOpgeslaanText;
+            this.voltooid = Voltooid;
+            this.filedoesnexist = FileDoesntExistText;
+            this.filenotfound = FileNotFoundText;
+            this.rectanglemarked = RectangleMarkedText;
+            this.completed = Completed;
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -390,14 +406,20 @@ namespace Project_Keyboard_Tester
 
             keychecker.SaveToJson(filePath);
 
-            MessageBox.Show($"De werkende toetsen zijn opgeslagen naar het bestand:\n{filePath}",
-                "Opslaan voltooid", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show($"{GetSuccesVolOpgeslaanText()}\n{filePath}",
+                GetVoltooidText(), MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void jsonopenbtn_Click(object sender, RoutedEventArgs e)
         {
             // Haal de bestandsnaam op uit jsonsearchtextbox
             string fileName = jsonsearchtextbox.Text;
+
+            // Controleer of de bestandsnaam eindigt op ".json" en voeg het toe als dat niet het geval is
+            if (!fileName.EndsWith(".json"))
+            {
+                fileName += ".json";
+            }
 
             // Bepaal het volledige pad naar het JSON-bestand
             string directoryPath = @"D:\Vives 1-2\OOP\Project Keyboard-Tester";
@@ -406,7 +428,7 @@ namespace Project_Keyboard_Tester
             // Controleer of het bestand bestaat
             if (!File.Exists(filePath))
             {
-                MessageBox.Show("Het opgegeven bestand bestaat niet.", "Bestand niet gevonden",
+                MessageBox.Show($"{GetFileDoesntExistText()}", GetFileNotFoundText(),
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
@@ -423,15 +445,41 @@ namespace Project_Keyboard_Tester
                 // Zoek de rechthoek met de overeenkomende naam
                 Rectangle foundRectangle = (Rectangle)FindName(rectangleName);
 
-                // Markeer de gevonden rechthoeken
                 if (foundRectangle != null)
                 {
                     foundRectangle.Fill = Brushes.Green;
                 }
             }
 
-            MessageBox.Show("Rechthoeken gemarkeerd zoals gespecificeerd in het JSON-bestand.", "Voltooid",
+            MessageBox.Show($"{GetRectangleMarkedText()}", GetCompleted(),
                 MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+        public string GetSuccesVolOpgeslaanText()
+        {
+            return succesVolOpgeslaanText;
+        }
+
+        public string GetVoltooidText()
+        {
+            return voltooid;
+        }
+
+        public string GetFileDoesntExistText()
+        {
+            return filedoesnexist;
+        }
+
+        public string GetFileNotFoundText()
+        {
+            return filenotfound;
+        }
+        public string GetRectangleMarkedText()
+        {
+            return rectanglemarked;
+        }
+        public string GetCompleted()
+        {
+            return completed;
         }
     }
 }

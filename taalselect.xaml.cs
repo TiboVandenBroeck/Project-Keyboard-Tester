@@ -35,10 +35,21 @@ namespace Project_Keyboard_Tester
             string jsonsearchMessage = nederlands.JsonSearchTxtMessage();
             string jsonsavebtnMessage = nederlands.JsonSaveBtnTxtMessage();
             string jsonsearchbtnMessage = nederlands.JsonSearchBtnTxtMessage();
+            string starttestingbtnMessage = nederlands.StartTestingBtnTxtMessage();
+            string succesvolopgeslagenMessage = nederlands.OpslaanMessage();
+            string voltooidMessage = nederlands.VoltooidMessage();
+            string filedoesntexistMessage = nederlands.FileDoesntExistMessage();
+            string filenotfoundMessage = nederlands.FileNotFoundMesssage();
+            string rectanglemarkedMessage = nederlands.RectanglesMarkedMessage();
+            string completedMessage = nederlands.CompletedMessage();
 
-            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
-            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
-            Start start = new Start(headerMessage, chooseMessage, qwerty , azerty);
+            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, 
+                jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage, 
+                filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
+            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, 
+                jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage, 
+                filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty , azerty, starttestingbtnMessage);
             start.Show();
             this.Hide();
         }
@@ -54,10 +65,21 @@ namespace Project_Keyboard_Tester
             string jsonsearchMessage = frans.JsonSearchTxtMessage();
             string jsonsavebtnMessage = frans.JsonSaveBtnTxtMessage();
             string jsonsearchbtnMessage = frans.JsonSearchBtnTxtMessage();
+            string starttestingbtnMessage = frans.StartTestingBtnTxtMessage();
+            string succesvolopgeslagenMessage = frans.OpslaanMessage();
+            string voltooidMessage = frans.VoltooidMessage();
+            string filedoesntexistMessage = frans.FileDoesntExistMessage();
+            string filenotfoundMessage = frans.FileNotFoundMesssage();
+            string rectanglemarkedMessage = frans.RectanglesMarkedMessage();
+            string completedMessage = frans.CompletedMessage();
 
-            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
-            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
-            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty);
+            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
+                jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
+                filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
+            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
+                jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
+                filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty, starttestingbtnMessage);
             start.Show();
             this.Hide();
         }
@@ -73,10 +95,21 @@ namespace Project_Keyboard_Tester
             string jsonsearchMessage = spaans.JsonSearchTxtMessage();
             string jsonsavebtnMessage = spaans.JsonSaveBtnTxtMessage();
             string jsonsearchbtnMessage = spaans.JsonSearchBtnTxtMessage();
+            string starttestingbtnMessage = spaans.StartTestingBtnTxtMessage();
+            string succesvolopgeslagenMessage = spaans.OpslaanMessage();
+            string voltooidMessage = spaans.VoltooidMessage();
+            string filedoesntexistMessage = spaans.FileDoesntExistMessage();
+            string filenotfoundMessage = spaans.FileNotFoundMesssage();
+            string rectanglemarkedMessage = spaans.RectanglesMarkedMessage();
+            string completedMessage = spaans.CompletedMessage();
 
-            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
-            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, jsonsavebtnMessage, jsonsearchbtnMessage);
-            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty);
+            AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
+                jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
+                filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
+            QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
+                jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
+                filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty, starttestingbtnMessage);
             start.Show();
             this.Hide();
         }

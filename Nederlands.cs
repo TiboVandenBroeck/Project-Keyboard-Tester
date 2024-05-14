@@ -44,5 +44,33 @@ namespace Project_Keyboard_Tester
         {
             return "Gebruik bestaand bestand";
         }
+        public override string StartTestingBtnTxtMessage()
+        {
+            return "Start Testen";
+        }
+        public override string OpslaanMessage()
+        {
+            return "Succesvol opgeslagen in:";
+        }
+        public override string VoltooidMessage()
+        {
+            return "Opgeslagen!";
+        }
+        public override string FileDoesntExistMessage()
+        {
+            return "Het opgegeven bestand bestaat niet!";
+        }
+        public override string FileNotFoundMesssage()
+        {
+            return "Bestand Niet Gevonden";
+        }
+        public override string RectanglesMarkedMessage()
+        {
+            return "Rechthoeken gemarkeerd zoals aangegeven in het JSON-bestand.";
+        }
+        public override string CompletedMessage()
+        {
+            return "Voltooid!";
+        }
     }
 }

@@ -10,7 +10,7 @@
     <Grid>
         <Canvas>
             <ComboBox HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Name="toestenbordcombobox" Canvas.Left="27" Canvas.Top="100"/>
-            <Button Content="Start testen" HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Name="startbtn" Background="LightGreen" Click="startbtn_Click" Canvas.Left="27" Canvas.Top="164"/>
+            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Name="startbtn" Background="LightGreen" Click="startbtn_Click" Canvas.Left="27" Canvas.Top="164"/>
             <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Center" Name="keyboardlbl" Canvas.Left="22" Canvas.Top="38"/>
             <Label Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center" Name="kieslbl" Canvas.Left="22" Canvas.Top="69"/>
         </Canvas>
