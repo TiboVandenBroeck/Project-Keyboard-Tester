@@ -72,5 +72,22 @@ namespace Project_Keyboard_Tester
         {
             return "Voltooid!";
         }
+        public override string ErrorMessage()
+        {
+            return "Fout!";
+        }
+        public override string AzertyNotMessage()
+        {
+            return "AZERTY-venster is niet correct geïnitialiseerd.";
+        }
+        public override string QwertyNotMessage()
+        {
+            return "QWERTY-venster is niet correct geïnitialiseerd.";
+        }
+        public override string NoKeyboardSelectedMessage()
+        {
+            return "Geen toetsenbord geselecteerd.";
+        }
+
     }
 }

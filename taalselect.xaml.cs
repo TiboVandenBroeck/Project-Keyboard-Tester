@@ -24,6 +24,7 @@ namespace Project_Keyboard_Tester
             InitializeComponent();
         }
 
+        //Als knop ingedrukt wordt, wordt de juiste taal doorgestuurd naar de nodige items
         private void NederlandsButton_Click(object sender, EventArgs e)
         {
             Nederlands nederlands = new Nederlands();
@@ -42,6 +43,10 @@ namespace Project_Keyboard_Tester
             string filenotfoundMessage = nederlands.FileNotFoundMesssage();
             string rectanglemarkedMessage = nederlands.RectanglesMarkedMessage();
             string completedMessage = nederlands.CompletedMessage();
+            string foutMessage = nederlands.ErrorMessage();
+            string azertynotMessage = nederlands.AzertyNotMessage();
+            string qwertynotMessage = nederlands.QwertyNotMessage();
+            string nokeyboardselectedMessage = nederlands.NoKeyboardSelectedMessage();
 
             AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, 
                 jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage, 
@@ -49,7 +54,8 @@ namespace Project_Keyboard_Tester
             QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage, 
                 jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage, 
                 filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
-            Start start = new Start(headerMessage, chooseMessage, qwerty , azerty, starttestingbtnMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty , azerty, starttestingbtnMessage,
+                foutMessage, azertynotMessage, qwertynotMessage, nokeyboardselectedMessage);
             start.Show();
             this.Hide();
         }
@@ -72,6 +78,10 @@ namespace Project_Keyboard_Tester
             string filenotfoundMessage = frans.FileNotFoundMesssage();
             string rectanglemarkedMessage = frans.RectanglesMarkedMessage();
             string completedMessage = frans.CompletedMessage();
+            string foutMessage = frans.ErrorMessage();
+            string azertynotMessage = frans.AzertyNotMessage();
+            string qwertynotMessage = frans.QwertyNotMessage();
+            string nokeyboardselectedMessage = frans.NoKeyboardSelectedMessage();
 
             AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
                 jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
@@ -79,7 +89,8 @@ namespace Project_Keyboard_Tester
             QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
                 jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
                 filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
-            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty, starttestingbtnMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty, starttestingbtnMessage,
+                foutMessage, azertynotMessage, qwertynotMessage, nokeyboardselectedMessage);
             start.Show();
             this.Hide();
         }
@@ -102,6 +113,10 @@ namespace Project_Keyboard_Tester
             string filenotfoundMessage = spaans.FileNotFoundMesssage();
             string rectanglemarkedMessage = spaans.RectanglesMarkedMessage();
             string completedMessage = spaans.CompletedMessage();
+            string foutMessage = spaans.ErrorMessage();
+            string azertynotMessage = spaans.AzertyNotMessage();
+            string qwertynotMessage = spaans.QwertyNotMessage();
+            string nokeyboardselectedMessage = spaans.NoKeyboardSelectedMessage();
 
             AZERTY azerty = new AZERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
                 jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
@@ -109,7 +124,8 @@ namespace Project_Keyboard_Tester
             QWERTY qwerty = new QWERTY(greenMessage, grayMessage, jsonsaveMessage, jsonsearchMessage,
                 jsonsavebtnMessage, jsonsearchbtnMessage, succesvolopgeslagenMessage, voltooidMessage,
                 filedoesntexistMessage, filenotfoundMessage, rectanglemarkedMessage, completedMessage);
-            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty, starttestingbtnMessage);
+            Start start = new Start(headerMessage, chooseMessage, qwerty, azerty, starttestingbtnMessage,
+                foutMessage, azertynotMessage, qwertynotMessage, nokeyboardselectedMessage);
             start.Show();
             this.Hide();
         }

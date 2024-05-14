@@ -13,9 +13,6 @@ using Newtonsoft.Json;
 
 namespace Project_Keyboard_Tester
 {
-    /// <summary>
-    /// Interaction logic for AZERTY.xaml
-    /// </summary>
     public partial class AZERTY : Window
     {
         private Keychecker keychecker;
@@ -27,6 +24,7 @@ namespace Project_Keyboard_Tester
         private string rectanglemarked;
         private string completed;
 
+        //alle tekst voor de tekstvakken, knoppen en messageboxen ontvangen
         public AZERTY(string GreenLabelText, string GrayLabelText, string JsonSaveText, string JsonSearchText, 
             string JsonSaveBtnText, string JsonSearchBtnText, string SuccesVolOpgeslaanText, string Voltooid,
             string FileDoesntExistText, string FileNotFoundText, string RectangleMarkedText, string Completed)
@@ -49,9 +47,8 @@ namespace Project_Keyboard_Tester
             this.rectanglemarked = RectangleMarkedText;
             this.completed = Completed;
         }
-
         
-
+        //om TAB tegen te gaan
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             this.Focus();
@@ -60,20 +57,21 @@ namespace Project_Keyboard_Tester
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             keychecker.AddWorkingKey(e.Key.ToString());
-
+            //Verschil maken tussen enter normaal en enter numbpad
+            //bij numlock geactiveerd => enkel numpad enter
+            //bij numlock uitgeschakeld => enkel normaal enter
             switch (e.Key)
             {
                 case Key.Enter when Keyboard.IsKeyToggled(Key.NumLock):
                     REnter.Fill = Brushes.Green;
+                    //zorg dat er bij mijn json bestand een verschil is tussen de twee
                     keychecker.AddWorkingKey("REnter");
                     break;
                 default:
                     break;
             }
 
-            
-
-
+            //switch case met alle toesten
             switch (e.Key)
             {
                 case Key.Escape:
@@ -106,12 +104,14 @@ namespace Project_Keyboard_Tester
                 case Key.F9:
                     F9.Fill = Brushes.Green;
                     break;
+                //F10 was een moeilijk geval
+                //oplossing gevonden door het syteem op te roepen
                 case Key.System:
                     if (e.SystemKey == Key.F10)
                     {
                         F10.Fill = Brushes.Green;
-                        break;
                         e.Handled = true;
+                        break;
                     }
                     break;     
                 case Key.F11:
@@ -120,7 +120,8 @@ namespace Project_Keyboard_Tester
                 case Key.F12:
                     F12.Fill = Brushes.Green;
                     break;
-                    //wordt weldegelijk ingeduwd maar geeft niets terug.
+                //printscreen wordt wel gemaakt maar wordt niet gedetecteerd
+                //werkt ook niet volgens F10 oplossing
                 case Key.PrintScreen:
                     PrintScreen.Fill = Brushes.Green;
                     break;
@@ -232,6 +233,7 @@ namespace Project_Keyboard_Tester
                 case Key.Oem1:
                     Oem1.Fill = Brushes.Green;
                     break;
+                //enter aanpassing
                 case Key.Enter when !Keyboard.IsKeyToggled(Key.NumLock):
                     Enter.Fill = Brushes.Green;
                     break;
@@ -370,7 +372,7 @@ namespace Project_Keyboard_Tester
                 case Key.Space:
                     Space.Fill = Brushes.Green;
                     break;
-                //functie key kan niet getecteerd worden!!!!
+                //functie knop wordt niet gedetecteerd
                 case Key.Apps:
                     Apps.Fill = Brushes.Green;
                     break;
@@ -397,12 +399,15 @@ namespace Project_Keyboard_Tester
             }
         }
 
+        //json bestand opslaan
         private void Jsonsavebtn_Click(object sender, RoutedEventArgs e)
         {
             string jsonContent = jsonsavetextbox.Text;
 
+            //automatisch bijplaatsen van .json
             string fileName = $"{jsonContent}.json";
 
+            //file path (BIJ TESTEN AANPASSEN)
             string directoryPath = @"D:\Vives 1-2\OOP\Project Keyboard-Tester";
             string filePath = System.IO.Path.Combine(directoryPath, fileName);
 
@@ -412,22 +417,21 @@ namespace Project_Keyboard_Tester
                 GetVoltooidText(), MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
+        //Json bestand te openen vanuit bestanden
         private void jsonopenbtn_Click(object sender, RoutedEventArgs e)
         {
-            // Haal de bestandsnaam op uit jsonsearchtextbox
             string fileName = jsonsearchtextbox.Text;
 
-            // Controleer of de bestandsnaam eindigt op ".json" en voeg het toe als dat niet het geval is
+            //Controleer of de bestandsnaam eindigt op ".json" en voeg het toe als dat niet het geval is
             if (!fileName.EndsWith(".json"))
             {
                 fileName += ".json";
             }
 
-            // Bepaal het volledige pad naar het JSON-bestand
             string directoryPath = @"D:\Vives 1-2\OOP\Project Keyboard-Tester";
             string filePath = System.IO.Path.Combine(directoryPath, fileName);
 
-            // Controleer of het bestand bestaat
+            //Check of het bestand bestaat
             if (!File.Exists(filePath))
             {
                 MessageBox.Show($"{GetFileDoesntExistText()}", GetFileNotFoundText(),
@@ -435,16 +439,13 @@ namespace Project_Keyboard_Tester
                 return;
             }
 
-            // Lees de inhoud van het JSON-bestand
             string jsonContent = File.ReadAllText(filePath);
 
-            // Deserialiseer de JSON-inhoud naar een geschikt object
             List<string> rectangleNames = JsonConvert.DeserializeObject<List<string>>(jsonContent);
 
-            // Itereer door de deserialiseerde objecten en zoek de overeenkomende rechthoeken
+            //Rechthoeken oproepen die in het json bestand staan
             foreach (string rectangleName in rectangleNames)
             {
-                // Zoek de rechthoek met de overeenkomende naam
                 Rectangle foundRectangle = (Rectangle)FindName(rectangleName);
 
                 if (foundRectangle != null)
@@ -457,6 +458,7 @@ namespace Project_Keyboard_Tester
                 MessageBoxButton.OK, MessageBoxImage.Information);
 
         }
+        //Alle methods om de taal data in de message boxen te plaatsen
         public string GetSuccesVolOpgeslaanText()
         {
             return succesVolOpgeslaanText;

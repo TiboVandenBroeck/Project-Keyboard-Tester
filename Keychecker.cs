@@ -30,27 +30,10 @@ namespace Project_Keyboard_Tester
             }
         }
 
-        public void RemoveWorkingKey(string keyName)
-        {
-            if (WorkingKeys.Contains(keyName))
-            {
-                WorkingKeys.Remove(keyName);
-            }
-        }
-
         public void SaveToJson(string filePath)
         {
             string json = JsonConvert.SerializeObject(WorkingKeys, Formatting.Indented);
             File.WriteAllText(filePath, json);
-        }
-
-        public void LoadFromJson(string filePath)
-        {
-            if (File.Exists(filePath))
-            {
-                string json = File.ReadAllText(filePath);
-                WorkingKeys = JsonConvert.DeserializeObject<List<string>>(json);
-            }
         }
     }
 

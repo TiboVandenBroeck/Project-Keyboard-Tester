@@ -80,5 +80,22 @@ namespace Project_Keyboard_Tester
         {
             return "Completed!";
         }
+        public virtual string ErrorMessage()
+        {
+            return "Error!";
+        }
+        public virtual string AzertyNotMessage()
+        {
+            return "AZERTY-window is not initialized correctly.";
+        }
+        public virtual string QwertyNotMessage()
+        {
+            return "QWERTY-window is not initialized correctly.";
+        }
+        public virtual string NoKeyboardSelectedMessage()
+        {
+            return "No keyboard selected.";
+        }
+
     }
 }

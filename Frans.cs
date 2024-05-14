@@ -71,6 +71,22 @@ namespace Project_Keyboard_Tester
         {
             return "Complété!";
         }
+        public override string ErrorMessage()
+        {
+            return "Faux!";
+        }
+        public override string AzertyNotMessage()
+        {
+            return "La fenêtre AZERTY n'est pas initialisée correctement.";
+        }
+        public override string QwertyNotMessage()
+        {
+            return "La fenêtre QWERTY n'est pas initialisée correctement.";
+        }
+        public override string NoKeyboardSelectedMessage()
+        {
+            return "Aucun clavier sélectionné.";
+        }
     }
 }
 

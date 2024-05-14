@@ -20,9 +20,6 @@ using static System.Formats.Asn1.AsnWriter;
 
 namespace Project_Keyboard_Tester
 {
-    /// <summary>
-    /// Interaction logic for QWERTY.xaml
-    /// </summary>
     public partial class QWERTY : Window
     {
         private Keychecker keychecker;
@@ -412,20 +409,16 @@ namespace Project_Keyboard_Tester
 
         private void jsonopenbtn_Click(object sender, RoutedEventArgs e)
         {
-            // Haal de bestandsnaam op uit jsonsearchtextbox
             string fileName = jsonsearchtextbox.Text;
 
-            // Controleer of de bestandsnaam eindigt op ".json" en voeg het toe als dat niet het geval is
             if (!fileName.EndsWith(".json"))
             {
                 fileName += ".json";
             }
 
-            // Bepaal het volledige pad naar het JSON-bestand
             string directoryPath = @"D:\Vives 1-2\OOP\Project Keyboard-Tester";
             string filePath = System.IO.Path.Combine(directoryPath, fileName);
 
-            // Controleer of het bestand bestaat
             if (!File.Exists(filePath))
             {
                 MessageBox.Show($"{GetFileDoesntExistText()}", GetFileNotFoundText(),
@@ -433,16 +426,12 @@ namespace Project_Keyboard_Tester
                 return;
             }
 
-            // Lees de inhoud van het JSON-bestand
             string jsonContent = File.ReadAllText(filePath);
 
-            // Deserialiseer de JSON-inhoud naar een geschikt object
             List<string> rectangleNames = JsonConvert.DeserializeObject<List<string>>(jsonContent);
 
-            // Itereer door de deserialiseerde objecten en zoek de overeenkomende rechthoeken
             foreach (string rectangleName in rectangleNames)
             {
-                // Zoek de rechthoek met de overeenkomende naam
                 Rectangle foundRectangle = (Rectangle)FindName(rectangleName);
 
                 if (foundRectangle != null)

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,14 +16,19 @@ using System.Windows.Shapes;
 
 namespace Project_Keyboard_Tester
 {
-    /// <summary>
-    /// Interaction logic for Start.xaml
-    /// </summary>
     public partial class Start : Window
     {
         private QWERTY qwertyWindow;
         private AZERTY azertyWindow;
-        public Start(string KeyboardLabelText, string ChooseLabelText, QWERTY qwerty, AZERTY azerty, string StartTestingText)
+
+        private string error;
+        private string azertynot;
+        private string qwertynot;
+        private string nokeyboardselected;
+
+        //Ontvangen taal voor labels en knoppen
+        public Start(string KeyboardLabelText, string ChooseLabelText, QWERTY qwerty, AZERTY azerty, string StartTestingText,
+            string errorText, string azertynotText, string qwertynotText, string nokeyboardselectedText)
         {
             InitializeComponent();
 
@@ -34,41 +40,69 @@ namespace Project_Keyboard_Tester
 
             qwertyWindow = qwerty;
             azertyWindow = azerty;
+
+            this.error = errorText;
+            this.azertynot = azertynotText;
+            this.qwertynot = qwertynotText;
+            this.nokeyboardselected = nokeyboardselectedText;
         }
 
+        //welk keyboard geselecteerd wordt
         private void startbtn_Click(object sender, RoutedEventArgs e)
         {
-            if (toestenbordcombobox.SelectedItem.ToString() == "AZERTY")
+            if (toestenbordcombobox.SelectedItem != null)
             {
-                if (azertyWindow != null)
+                if (toestenbordcombobox.SelectedItem.ToString() == "AZERTY")
                 {
-                    this.Visibility = Visibility.Hidden;
-                    azertyWindow.Show();
+                    if (azertyWindow != null)
+                    {
+                        this.Visibility = Visibility.Hidden;
+                        azertyWindow.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show($"{GetAzertyNotText()}", GetErrorText(), MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
-                else
+                else if (toestenbordcombobox.SelectedItem.ToString() == "QWERTY")
                 {
-                    MessageBox.Show("AZERTY-venster is niet correct geïnitialiseerd.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+                    if (qwertyWindow != null)
+                    {
+                        this.Visibility = Visibility.Hidden;
+                        qwertyWindow.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show($"{GetQwertyNotText()}", GetErrorText(), MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
-            }
-            else if (toestenbordcombobox.SelectedItem.ToString() == "QWERTY")
-            {
-                if (qwertyWindow != null)
-                {
-                    this.Visibility = Visibility.Hidden;
-                    qwertyWindow.Show();
-                }
-                else
-                {
-                    MessageBox.Show("QWERTY-venster is niet correct geïnitialiseerd.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Ongeldige toetsenbordoptie geselecteerd.", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
+                MessageBox.Show($"{GetNoKeyboardSelectedText()}", GetErrorText(), MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            this.Close();
+            
         }
+
+        //talen aanpassingen messageboxen
+        public string GetErrorText()
+        {
+            return error;
+        }
+        public string GetAzertyNotText()
+        {
+            return azertynot;
+        }
+        public string GetQwertyNotText()
+        {
+            return qwertynot;
+        }
+        public string GetNoKeyboardSelectedText()
+        {
+            return nokeyboardselected;
+        }
+
     }
 }
